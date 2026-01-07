@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 10px solid gray;
+            width: 500px;
+            margin: auto;    
+            table-layout: fixed;    /* important for fixed width layout */
+        }
+
+        td,th{
+            text-align: center;
+            border: 5px solid black;
+            background-color: rgb(215, 215, 215);
+            padding: 5px;
+        }
+
+        #head{
+            font-weight: bold ;
+            color: white;
+            background: rgb(102, 102, 102);;
+        }
+
+        #result {
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td id="head" colspan="4">JavaScript Calculator</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="result" colspan="3"> </td>
+                <td onclick="equal()">=</td>
+            </tr>
+
+            <tr>
+                <td onclick="recieveInput(this)">1</td>
+                <td onclick="recieveInput(this)">2</td>
+                <td onclick="recieveInput(this)">3</td>
+                <td onclick="recieveInput(this)">+</td>
+            </tr>
+
+            <tr>
+                <td onclick="recieveInput(this)">4</td>
+                <td onclick="recieveInput(this)">5</td>
+                <td onclick="recieveInput(this)">6</td>
+                <td onclick="recieveInput(this)">-</td>
+            </tr> 
+
+            <tr>
+                <td onclick="recieveInput(this)">7</td>
+                <td onclick="recieveInput(this)">8</td>
+                <td onclick="recieveInput(this)">9</td>
+                <td onclick="recieveInput(this)">*</td>
+            </tr>
+
+            <tr>
+                <td onclick="clearCalc()">C</td>
+                <td onclick="recieveInput(this)">0</td>
+                <td onclick="recieveInput(this)">.</td>
+                <td onclick="recieveInput(this)">/</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <script src="task2.js"></script>
+</body>
+</html>

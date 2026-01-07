@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manipulating CSS and Classes</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet"
+            href="/style/09-ManipulatingCSSAndClasses.css">
+    </head>
+    <body>
+        <h1>Manipulating CSS and Classes</h1>
+
+        <div class="example">
+            <h2>Working with CSS and Classes</h2>
+
+            <div id="styleDiv">This is a styleable div</div>
+            <br>
+            <button id="btnAddClass">Add class
+                ($("#styleDiv").addClass("intro"))</button>
+            <button id="btnRemoveClass">Remove class
+                ($("#styleDiv").removeClass("intro"))</button>
+            <button id="btnToggleClass">Toggle class
+                ($("#styleDiv").toggleClass("intro"))</button>
+            <button id="btnHasClass">Check if has class
+                ($("#styleDiv").hasClass("intro"))</button>
+            <button id="btnCssGet">Get CSS color
+                ($("#styleDiv").css("color"))</button>
+            <button id="btnCssSet">Set CSS color ($("#styleDiv").css("color",
+                "green"))</button>
+        </div>
+
+        <script src="/js/09-ManipulatingCSSAndClasses.js"></script>
+    </body>
+</html>

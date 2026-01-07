@@ -1,0 +1,159 @@
+h2 {
+    font-size: 32px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.container-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.container-info h2{
+    font-size: 24px;
+}
+
+.container{
+    margin: 70px 0;
+}   
+
+#title{
+    font-weight: bold;
+    font-size: 32px;
+    color: #4f48e5;
+}
+
+.headers{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-size: 24px;
+    gap: 24px;
+}
+
+/*About Section*/
+.landing-text{
+    min-width: 200px;
+    max-width: 40%;
+}
+
+button{
+    background-color: #4f46e5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color:#8f8bd8;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.landing-img{
+    min-width: 30%;
+    max-width: 50%;
+}   
+
+.landing-img img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-header{
+    text-align: center;
+    margin: 0;
+}
+
+.section-header h2{
+    margin: 0;
+}
+
+.section-header p{
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+
+.box {
+    width: 200px;
+    padding: 0 30px;
+    border-radius: 16px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.process-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    background-color: rgb(245, 245, 245);
+}
+
+.process-text{
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.process-image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1 1 600px;
+}
+
+.imgProcess{
+    flex: 1 1 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.imgProcess img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box-section3 {
+    padding: 5px 50px;
+    border-radius: 16px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.box-section3 p{
+    text-align: center;
+}
+
+.box-section3:hover {
+    transform: translateY(-5px);
+}
+
+footer{
+    font-size: 15px;
+    color: white;
+    background-color: #111827;
+    text-align: center;
+    padding: 10px 0;
+}

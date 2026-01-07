@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="navbar bg-base-100 shadow-sm">
+
+        <!-- Left: Logo -->
+        <div class="navbar-start">
+            <a class="btn btn-ghost text-xl text-violet-700 font-bold">
+                MyPortfolio
+            </a>
+        </div>
+
+        <!-- Right: Menu -->
+        <div class="navbar-end">
+
+            <!-- Burger menu (small screens) -->
+            <div class="dropdown dropdown-end lg:hidden">
+                <label tabindex="0" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Desktop menu -->
+            <ul class="menu menu-horizontal px-1 hidden lg:flex">
+                <li><a class="font-semibold">Home</a></li>
+                <li><a class="font-semibold">Services</a></li>
+                <li><a class="font-semibold">Projects</a></li>
+                <li><a class="font-semibold">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="hero bg-base-200 min-h-[30rem] bg-gradient-to-br from-violet-600 to-violet-900">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="./assets/R.jpg" class="max-w-sm rounded-lg shadow-2xl hidden md:block" />
+            <div>
+                <h1 class="text-5xl font-bold text-white">Box Office News!</h1>
+                <p class="py-6 text-white">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary bg-white text-violet-600 hover:bg-violet-900 hover:text-white">View
+                    Work</button>
+                <button class="btn btn-neutral btn-outline text-neutral-200 border-neutral-400">Contact Me</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="services__section my-24">
+        <h2 class="text-3xl font-bold text-black py-5 text-center">Services</h2>
+
+        <div
+            class="services__cards flex flex-col justify-center items-center sm:flex-row sm:justify-center sm:items-center py-5 gap-5">
+            <div class="card bg-base-100 w-96 shadow-sm hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src="./assets/frontend-dev.webp" alt="frontend pic" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Forntend Development</h2>
+                    <p>Responsive and scalable UI developnemts</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src="./assets/Top-10-Backend-Technologies-That-You-Must-Know.webp" alt="backend pic" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Backend Development</h2>
+                    <p>end to end APIs and high accuracy algorithms</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src=".//assets/DB.webp" alt="Database pic" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Database</h2>
+                    <p>high performane for managing database</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="projects__section mt-24 bg-gray-200">
+        <h2 class="text-3xl font-bold text-black py-5 text-center">Projects</h2>
+
+        <div
+            class="services__cards flex flex-col justify-center items-center sm:flex-row sm:justify-center sm:items-center py-5 gap-5">
+            <div class="card bg-base-100 w-96 shadow-sm hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src="./assets/Web-design-projects-(1).webp" alt="frontend pic" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Fitness App</h2>
+                    <p>Responsive and scalable UI developnemts</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src="./assets/Web-design-projects-(2).png" alt="backend pic" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Restaurant website</h2>
+                    <p>end to end APIs and high accuracy algorithms</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src=".//assets/Web-Development-Projects.webp" alt="Database pic" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Store Website</h2>
+                    <p>high performane for managing database</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-section m-8">
+            <h2 class="text-3xl font-bold text-black py-5 text-center">Skills</h2>
+            <div class="skills grid grid-cols-2 justify-center md:grid-cols-4 p-5 gap-5">
+                <div class="card col-span-1  bg-base-100 card-xs shadow-sm py-5 hover:shadow-black transition-all duration-300">
+                    <h2 class="text-center">HTML</h2>
+                </div>
+                <div class="card col-span-1  bg-base-100 card-xs shadow-sm py-5 hover:shadow-black transition-all duration-300">
+                    <h2 class="text-center">JavaScript</h2>
+                </div>
+                <div class="card col-span-1  bg-base-100 card-xs shadow-sm py-5 hover:shadow-black transition-all duration-300">
+                    <h2 class="text-center">Java</h2>
+                </div>
+                <div class="card col-span-1 bg-base-100 card-xs shadow-sm py-5 hover:shadow-black transition-all duration-300">
+                    <h2 class="text-center">SQL</h2>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="min-h-[20rem] p-5 bg-gradient-to-br from-blue-700 via-violet-700 to-violet-500 flex flex-col items-center justify-center gap-5">
+            <h2 class="text-5xl font-bold text-white">Let's Work Together</h2>
+            <button class="btn btn-primary bg-white text-violet-600 hover:bg-violet-900 hover:text-white">Get
+                In Touch</button>
+        </div>
+    </div>
+
+    <footer class="flex flex-col justify-between items-center md:flex-row m-0 bg-gray-800 p-[30px]">
+        <h6 class="text-white">&copy; 2025 MyPortfolio. All rights reserved.</h6>
+        <ul class="list-unstyled flex justify-between items-center gap-5 text-white">
+            <li>LinkedIn</li>
+            <li>GitHub</li>
+            <li>Email</li>
+        </ul>
+    </footer>
+
+
+</body>
+
+</html>

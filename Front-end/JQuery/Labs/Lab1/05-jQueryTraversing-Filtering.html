@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery Traversing - Filtering</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="/style/05-jQueryTraversing-Filtering.css">n
+    </head>
+    <body>
+        <h1>jQuery Traversing - Filtering</h1>
+
+        <div class="example">
+            <h2>DOM Traversal and Filtering Methods</h2>
+
+            <div id="container">
+                <p>First paragraph in div</p>
+                <p class="intro">Second paragraph with class intro</p>
+                <p>Third paragraph</p>
+                <p class="intro">Fourth paragraph with class intro</p>
+                <p>Last paragraph in div</p>
+            </div>
+            
+            <div id="container">
+                <p>First paragraph in div</p>
+                <p class="intro">Second paragraph with class intro</p>
+                <p>Third paragraph</p>
+                <p class="intro">Fourth paragraph with class intro</p>
+                <p>Last paragraph in div</p>
+            </div>
+
+            <ul>
+                <li class="start">Start item</li>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li class="stop">Stop item</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+
+            <div>
+                <span>Span with A letter</span>
+                <span>Span with B letter</span>
+                <span>Span with C letter</span>
+            </div>
+
+            <button id="btnFirst">First paragraph in div
+                ($("div p").first())</button>
+            <button id="btnLast">Last paragraph in div
+                ($("div p").last())</button>
+            <button id="btnEq">Second paragraph ($("p").eq(1))</button>
+            <button id="btnNext">Next after .intro
+                ($("p.intro").next())</button>
+            <button id="btnNextAll">All after .start
+                ($("li.start").nextAll())</button>
+            <button id="btnSiblings">Siblings of .start
+                ($("li.start").siblings())</button>
+            <button id="btnNextUntil">Elements between .start and .stop
+                ($("li.start").nextUntil("li.stop"))</button>
+            <button id="btnContains">Spans containing "A"
+                ($('span:contains("A")'))</button>
+            <button id="btnFilter">Paragraphs with class intro
+                ($("p").filter(".intro"))</button>
+            <button id="btnNot">Paragraphs without class intro
+                ($("p").not(".intro"))</button>
+        </div>
+
+        <script src="/js/05-jQueryTraversing-Filtering.js"></script>
+    </body>
+</html>

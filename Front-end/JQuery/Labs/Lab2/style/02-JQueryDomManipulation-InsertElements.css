@@ -1,0 +1,36 @@
+body {
+  font-family: Arial;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.example {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container {
+  border: 2px solid black;
+  padding: 15px;
+  margin: 15px 0;
+}
+.item {
+  background-color: #e7f4ff;
+  padding: 10px;
+  margin: 5px;
+}
+.new-item {
+  background-color: #ffebee;
+  padding: 10px;
+  margin: 5px;
+}

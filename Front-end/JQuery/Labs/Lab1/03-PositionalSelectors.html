@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positional Selectors</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="/style/03-PositionalSelectors.css">
+    </head>
+    <body>
+        <h1>Positional Selectors</h1>
+
+        <div class="example">
+            <h2>Position-based Selection</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+
+            <button id="btnSelectEven">Select Even Items ($("li:even"))</button>
+            <button id="btnSelectFirst">Select First Paragraph
+                ($("p:first"))</button>
+            <button id="btnSelectThird">Select Third Paragraph
+                ($("p:eq(2)"))</button>
+        </div>
+
+        <script src="/js/03-PositionalSelectors.js"></script>
+    </body>
+</html>

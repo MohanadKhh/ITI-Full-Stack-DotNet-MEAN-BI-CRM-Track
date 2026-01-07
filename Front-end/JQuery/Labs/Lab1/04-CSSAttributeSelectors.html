@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Attribute Selectors</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="/style/04-CSSAttributeSelectors.css">
+    </head>
+    <body>
+        <h1>CSS Attribute Selectors</h1>
+
+        <div class="example">
+            <h2>Attribute-based Selection</h2>
+            <div data-type="fruit">Apple (data-type="fruit")</div>
+            <div data-type="vegetable">Carrot (data-type="vegetable")</div>
+            <div data-type="fruit berry">Strawberry
+                (data-type="fruit berry")</div>
+            <div data-type="nuts">Almond (data-type="nuts")</div>
+            <div data-category="food-item">Bread
+                (data-category="food-item")</div>
+            <div data-info="important-note">This is important
+                (data-info="important-note")</div>
+
+            <button id="btnAttrEquals">data-type="fruit"
+                ($('[data-type="fruit"]'))</button>
+            <button id="btnAttrNotEquals">data-type!="fruit"
+                ($('[data-type!="fruit"]'))</button>
+            <button id="btnAttrContainsWord">data-type~="berry"
+                ($('[data-type~="berry"]'))</button>
+            <button id="btnAttrStartsWith">data-category^="food"
+                ($('[data-category^="food"]'))</button>
+            <button id="btnAttrEndsWith">data-category$="item"
+                ($('[data-category$="item"]'))</button>
+            <button id="btnAttrContains">data-info*="note"
+                ($('[data-info*="note"]'))</button>
+        </div>
+
+        <script src="/js/04-CSSAttributeSelectors.js"></script>
+    </body>
+</html>

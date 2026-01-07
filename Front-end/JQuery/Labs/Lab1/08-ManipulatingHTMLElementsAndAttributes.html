@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manipulating HTML Elements and Attributes</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet"
+            href="style/08-ManipulatingHTMLElementsAndAttributes.css">
+    </head>
+    <body>
+        <h1>Manipulating HTML Elements and Attributes</h1>
+
+        <div class="example">
+            <h2>Working with Attributes and Content</h2>
+
+            <img id="myImage" src="/assets/spiderman.jpg" width="300"
+                title="spider-man image">
+            <br>
+            <button id="btnGetAttr">Get image title
+                ($("#myImage").attr("title"))</button>
+            <button id="btnSetAttr">Change image source
+                ($("#myImage").attr("src", "new-url"))</button>
+
+            <div id="content">
+                <p>Original content</p>
+            </div>
+            <button id="btnHtmlGet">Get HTML content
+                ($("#content").html())</button>
+            <button id="btnHtmlSet">Set HTML content
+                ($("#content").html("new html"))</button>
+            <button id="btnTextGet">Get text content
+                ($("#content").text())</button>
+            <button id="btnTextSet">Set text content
+                ($("#content").text("new text"))</button>
+
+            <input type="text" id="nameInput" value="John Doe">
+            <button id="btnGetVal">Get input value
+                ($("#nameInput").val())</button>
+            <button id="btnSetVal">Set input value
+                ($("#nameInput").val("new value"))</button>
+        </div>
+
+        <script src="/js/08-ManipulatingHTMLElementsAndAttributes.js"></script>
+    </body>
+</html>

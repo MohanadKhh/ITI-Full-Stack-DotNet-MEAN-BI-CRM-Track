@@ -1,0 +1,4 @@
+ProjectNo (PK)	ProjectName	Budget
+p1	Apollo	120000
+p2	Gemini	95000
+p3	Mercury	185600

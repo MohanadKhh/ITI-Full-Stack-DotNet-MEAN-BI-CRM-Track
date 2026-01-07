@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style/01-jQuerySelectors.css">
+</head>
+
+<body class="bg-gradient-to-br from-[#81b8bb] via-[#d2d2d2dd] to-[#81b8bb] min-h-screen min-w-full">
+    <form id="formPage" action="" class="flex items-start justify-center m-10">
+        <div class="flex flex-col items-start justify-center p-5 gap-5">
+            <label for="name">Enter your name:</label>
+            <label for="age">Enter your age:</label>
+            <label for="color">Select your favourite color:</label>
+            <label for="gender">Select your gender:</label>
+        </div>
+
+        <div class="flex flex-col items-start justify-center p-5 gap-5">
+            <input id="nameInput" type="text">
+            <input id="ageInput" type="text">
+            <select id="colorInput" name="color">
+                <option value="">-- Select Color --</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="orange">orange</option>
+            </select>
+            <div class="flex max-h-100 max-w-30">
+                <img id="maleImg" src="./assets/male.png" alt="male">
+                <img id="femaleImg" src="./assets/Female.png" alt="female">
+            </div>
+            <button id="submitBtn" type="button"
+                class="btn btn-success bg-[#28af61] rounded-xl text-white border-none w-full hover:scale-105">
+                <i class="fa-regular fa-paper-plane"></i>
+                Submit</button>
+        </div>
+    </form>
+
+    <div id="resultPage" class="hidden">
+        <div class="flex flex-col items-center gap-10 justify-center m-15">
+            <img class="max-h-150 max-w-50" src="./assets/male.png" alt="gender picture">
+            <div id="userData" class="text-3xl">
+                <span>Welcome </span><span></span><span></span>
+            </div>
+            <button id="backBtn" type="button"
+                class="btn btn-primary !bg-[#2662d9] rounded-xl text-white border-none w-1/4 hover:scale-105">
+                &lt; Back</button>
+        </div>
+    </div>
+
+    <script src="./js/cookieUtils.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>

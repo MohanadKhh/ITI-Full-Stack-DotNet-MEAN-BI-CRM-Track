@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery Selectors</title>
+
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="/style/01-jQuerySelectors.css">
+    </head>
+    <body>
+        <h1>jQuery Selectors</h1>
+
+        <div class="example">
+            <h2>Basic Selectors</h2>
+            <p>This is a paragraph.</p>
+            <p id="specialID">This is a paragraph with ID="specialID".</p>
+            <p class="specialClass">This is a paragraph with
+                class="specialClass".</p>
+            <p class="specialClass">Another paragraph with
+                class="specialClass".</p>
+            <p></p> <!-- Empty paragraph -->
+            <a href="#" class="specialClass">Link with specialClass</a>
+
+            <div>
+                <p>Paragraph inside div
+                    <a href="#" class="specialClass">Link with specialClass</a>
+                </p>
+            </div>
+
+            <button id="btnSelectAll">Select All Elements ($('*'))</button>
+            <button id="btnSelectChildren">Select Children of Paragraphs ($("p >
+                *"))</button>
+            <button id="btnSelectById">Select by ID ($("#specialID"))</button>
+            <button id="btnSelectByClass">Select by Class
+                ($(".specialClass"))</button>
+            <button id="btnSelectEmpty">Select Empty Paragraphs
+                ($("p:empty"))</button>
+            <button id="btnSelectNested">Select Nested Links
+                ($("p a.specialClass"))</button>
+        </div>
+
+        <script src="/js/01-jQuerySelectors.js"></script>
+    </body>
+</html>

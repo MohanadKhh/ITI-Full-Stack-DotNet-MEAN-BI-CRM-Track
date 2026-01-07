@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery DOM Manipulation - Clone Elements</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet"
+            href="/style/04-JQueryDomManipulation-Clone Elements.css">
+    </head>
+    <body>
+        <h1>jQuery DOM Manipulation - Clone Elements</h1>
+
+        <div class="example">
+            <h2>Cloning Elements</h2>
+            <p>jQuery allows you to create copies of elements with the .clone()
+                method:</p>
+
+            <div class="original clickable" id="original-element">
+                <p>This is the original element. Click me!</p>
+                <p>I have a click event handler.</p>
+            </div>
+
+            <div id="clone-container">
+                <p>Cloned elements will appear here:</p>
+            </div>
+
+            <button id="btn-clone">Clone without events (.clone())</button>
+            <button id="btn-clone-events">Clone with events
+                (.clone(true))</button>
+        </div>
+
+        <script src="/js/04-JQueryDomManipulation-Clone Elements.js"></script>
+    </body>
+</html>

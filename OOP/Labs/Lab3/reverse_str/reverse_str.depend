@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1762257192 source:d:\mohanad.khh\iti\oop\labs\lab3\reverse_str\main.cpp
+	<iostream>
+	<string>
+

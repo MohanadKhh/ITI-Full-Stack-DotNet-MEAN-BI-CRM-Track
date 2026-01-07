@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        #container{
+            text-align: center;
+            background-color: beige;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            background-color: beige;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: rgb(136, 136, 123);
+        }
+
+        table th,
+        table td {
+            padding: 12px 15px;
+            border: 1px solid #dddddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="./quran kareem.jpg" alt="">
+        <input id="audioRange" type="range" min="0" step="1" value="0" oninput="audioRange(this)">
+        <div>
+            <button type="button" onclick="play()">Play</button>
+            <button type="button" onclick="pause()">Pause</button>
+            <button type="button" onclick="replay()">Replay</button>
+            <input id="soundRange" type="range" min="0" max="1" step="0.1" value="1" oninput="audioVolume(this)">
+        </div>
+        <audio src="./audio/الا تنصروه.mpeg"></audio>
+    </div>
+
+    <table>
+        <tbody>
+            <tr><td onclick="changeAudio(this)">افلا ينظرون الى الابل</td></tr>
+            <tr><td onclick="changeAudio(this)">الا تنصروه فقد نصره الله</td></tr>
+            <tr><td onclick="changeAudio(this)">الذين آمنوا و تطمئن قلوبهم</td></tr>
+            <tr><td onclick="changeAudio(this)">ان الله الله لا يخفى عليه شئ</td></tr>
+        </tbody>
+    </table>
+
+    <script src="task3.js"></script>
+</body>
+</html> 

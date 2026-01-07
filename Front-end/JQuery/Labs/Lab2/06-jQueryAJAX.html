@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple jQuery AJAX</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="/style/06-jQueryAJAX.css">
+    </head>
+    <body>
+        <h1>Simple jQuery AJAX Examples</h1>
+
+        <div class="example">
+            <h2>1. Get Data with $.ajax()</h2>
+            <button id="btn-ajax">Get Data</button>
+            <div class="result" id="ajax-result">Click the button to see
+                data</div>
+        </div>
+
+        <div class="example">
+            <h2>2. Simple GET Request</h2>
+            <button id="btn-get">Get Simple Data</button>
+            <div class="result" id="get-result">Click the button to see
+                data</div>
+        </div>
+
+        <div class="example">
+            <h2>3. Get JSON Data</h2>
+            <button id="btn-getjson">Get User Info</button>
+            <div class="result" id="getjson-result">Click the button to see user
+                data</div>
+        </div>
+
+        <div class="example">
+            <h2>4. Send Data to Server</h2>
+            <button id="btn-post">Send Data</button>
+            <div class="result" id="post-result">Click the button to send
+                data</div>
+        </div>
+        <!-- https://jsonplaceholder.typicode.com/posts/1 -->
+        <script src="/js/06-jQueryAJAX.js"></script>
+    </body>
+</html>

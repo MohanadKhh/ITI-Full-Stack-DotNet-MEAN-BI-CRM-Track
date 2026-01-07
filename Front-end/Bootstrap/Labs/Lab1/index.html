@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        .welcome-section {
+            background-image: url(./assets/restaurant.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-5">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-white" href="#">Restaurant</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary fw-normal" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-secondary">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <div class="text-center welcome-section py-5 text-white fw-light mb-5">
+        <h1 class="fw-light">Welcome to Our Restaurant</h1>
+        <p>Delcious food served with love</p>
+        <button class="bg-primary fw-normal text-white border-0 rounded-3 p-2 px-3" type="button" name="View Menu">View
+            Menu</button>
+    </div>
+
+
+    <!-- Menu Section -->
+    <div class="Menu-Container my-5">
+        <h3 class="text-center pb-4">Our Menu</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-2 m-5 justify-content-center">
+            <div class="col">
+                <div class="card h-100 ">
+                    <div class="ratio ratio-4x3 ">
+                        <img src="./assets/natural.jpg" class="card-img-top object-fit-cover"  alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card supporting text below.</p>
+                        <h6 class="fw-bolder">$7.69</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ">
+                    <div class="ratio ratio-4x3">
+                        <img src="./assets/pc.jpg" class="card-img-top object-fit-cover"  alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid saepe nostrum, maiores ipsa debitis maxime esse sit cupiditate sapiente officia voluptates consectetur earum pariatur itaque dicta neque quae adipisci. Necessitatibus quas id praesentium, laborum nobis hic esse eaque odit et..</p>
+                        <h6 class="fw-bolder">$7.69</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ">
+                    <div class="ratio ratio-4x3 ">
+                        <img src="./assets/spiderman.jpg" class="card-img-top object-fit-cover"  alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla deserunt repellat mollitia non magni consequatur dolor excepturi, minima explicabo..</p>
+                        <h6 class="fw-bolder">$7.69</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Us Section -->
+    <div class="d-flex flex-column justify-content-center flex-md-row align-items-center m-5 gap-4">
+        <div class="w-100"> <img src="./assets/header.jpeg" alt="" class="w-100 rounded-4"> </div>
+        <div class="w-100">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quos veniam alias! Laudantium, animi maxime
+                aperiam numquam temporibus provident vel praesentium dignissimos iure nulla. Asperiores recusandae
+                necessitatibus illo facere rem?</p>
+        </div>
+    </div>
+
+
+    <!-- Contact Us Section -->
+    <div class="m-5">
+        <h3 class="text-center">Contact Us</h3>
+
+        <div class="">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center d-flex flex-column justify-content-center p-3 fw-lighter">
+        <h6 class="pb-2"> &copy; 2025 Restaurant. All rights reserved.</h6>
+        <ul class="list-unstyled d-flex justify-content-center m-0 gap-3">
+            <li><a class="text-decoration-none text-white" href="Facbook.com">Facbook</a></li>
+            <li><a class="text-decoration-none text-white" href="X.com">Twitter</a></li>
+            <li><a class="text-decoration-none text-white" href="Instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

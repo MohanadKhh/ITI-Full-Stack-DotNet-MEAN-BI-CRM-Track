@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1762254468 source:d:\mohanad.khh\iti\oop\labs\lab3\min_max\main.cpp
+	<iostream>
+	<limits.h>
+
