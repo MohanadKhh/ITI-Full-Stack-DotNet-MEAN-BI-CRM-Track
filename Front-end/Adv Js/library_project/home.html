@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body
+    class="bg-gradient-to-br from-[#97acd4] via-[#44ade1dd] to-[#aec3db] min-h-screen w-full py-15 px-5 md:px-10 lg:px-30 flex flex-col justify-start gap-15">
+    <div class="text-4xl text-center font-bold">Honda's Library</div>
+
+    <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
+        <table class="table table-zebra table-lg">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Author Name</th>
+                    <th>Author Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- table body added from js -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

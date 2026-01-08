@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <div class="hero__wrapper bg-[url('./assets/about.jpg')] bg-cover bg-center  text-slate-200 h-screen">
+
+        <!-- Navbar section -->
+        <div class="navbar shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1" class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <a href="home.html" class="btn btn-ghost text-sm md:text-xl">Honda's Lounge</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="home.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">Home</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end flex gap-5">
+                <a class="btn btn-sm lg:btn-md">Login</a>
+                <a class="btn btn-sm lg:btn-md">SignUp</a>
+            </div>
+        </div>
+
+        <!-- Hero section -->
+        <div class="hero__section flex flex-col justify-center gap-10 mx-5 md:mx-15 py-20 overflow-x-hidden">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Restaurant Story</h1>
+            <div class="text-sm font-semibold w-full max-w-xl break-words leading-relaxed lg:text-base">Honda’s was created with one dream —
+                to offer a place where
+                people can
+                enjoy fine dining, warm atmosphere, and beautifully crafted dishes. Every plate is prepared with care,
+                using quality ingredients and elegant presentation to create a truly memorable experience.</div>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Our Mission</h1>
+            <div class="text-sm font-semibold w-full max-w-xl break-words leading-relaxed lg:text-base">Our mission is to bring together
+                great taste, comfort, and luxury
+                dining.
+                We aim to serve food with passion, treat every guest with respect, and make every visit special and
+                unforgettable.</div>
+        </div>
+    </div>
+
+    <footer class="flex flex-col justify-center items-center ga bg-gray-800 p-[20px]">
+        <h6 class="text-white">&copy; Honda's Lounge. All rights reserved.</h6>
+        <ul class="list-unstyled flex justify-between items-center gap-5 text-white">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">TikTok</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

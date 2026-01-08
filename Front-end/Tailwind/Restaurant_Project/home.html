@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <div class="hero__wrapper bg-[url('./assets/home.jpg')] bg-cover bg-center  text-slate-200">
+
+        <!-- Navbar section -->
+        <div class="navbar shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1" class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="home.html"
+                                class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">Home</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">Contact</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="home.html" class="btn btn-ghost text-sm md:text-xl">Honda's Lounge</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="home.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">Home</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end flex gap-5">
+                <a class="btn btn-sm lg:btn-md">Login</a>
+                <a class="btn btn-sm lg:btn-md">SignUp</a>
+            </div>
+        </div>
+
+        <!-- Hero section -->
+        <div class="hero__section h-[700px] flex flex-col justify-center items-center gap-10">
+            <h1 class="text-5xl font-bold text-center">Welcome to Honda's Lounge</h1>
+            <div class="font-semibold text-center">Honda’s Lounge — Elegant dining, rich flavors, unforgettable
+                experience.</div>
+            <button onclick="navToMenu()" class="btn btn-primary">Menu</button>
+        </div>
+
+    </div>
+
+
+    <div class="services__section mx-15">
+
+        <h2 class="text-3xl font-bold text-center p-15 ">Our Services</h2>
+
+        <div class="services__cards flex flex-col gap-8 items-center justify-center lg:flex-row lg:justify-between">
+            <div class="card bg-base-100 w-70 shadow-sm h-full hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src="./assets/Services1.png" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Fine Dining Experience</h2>
+                    <p>Elegant atmosphere, premium dishes, and professional service.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-70 shadow-sm h-full hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src="./assets/Services2.png" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Private & VIP Reservations</h2>
+                    <p>Special and private areas for couples, families, or business meetings.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-70 shadow-sm h-full hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src="./assets/Services3.png" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Event & Celebration Hosting</h2>
+                    <p>We host birthdays, anniversaries, and small private events.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-70 shadow-sm h-full hover:-translate-y-8 transition-all duration-300">
+                <figure>
+                    <img src="./assets/Services4.png" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Online Table Booking</h2>
+                    <p>Reserve your table easily through our website or phone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="menu__section" class="mx-10 md:mx-15 mb-30">
+
+        <h2 class="text-3xl font-bold text-center p-15 ">Our Menu</h2>
+
+        <div
+            class="Menu__cards grid justify-center gap-10 [grid-template-columns:repeat(auto-fit,minmax(350px,350px))] md:gap-10 md:[grid-template-columns:repeat(auto-fit,minmax(300px,300px))] md:justify-between">
+            <div class="card bg-base-100 shadow-sm h-full hover:-translate-y-4 transition-all duration-300">
+                <figure class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-t-xl" src="./assets/menu1.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Fine Dining Experience</h2>
+                    <p>Elegant atmosphere, premium dishes, and professional service.</p>
+                    <p class="font-extrabold">200 L.E.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-sm h-full hover:-translate-y-4 transition-all duration-300">
+                <figure class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-t-xl" src="./assets/menu2.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Private & VIP Reservations</h2>
+                    <p>Special and private areas for couples, families, or business meetings.</p>
+                    <p class="font-extrabold">250 L.E.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-sm h-full hover:-translate-y-4 transition-all duration-300">
+                <figure class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-t-xl" src="./assets/menu3.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Event & Celebration Hosting</h2>
+                    <p>We host birthdays, anniversaries, and small private events.</p>
+                    <p class="font-extrabold">300 L.E.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-sm h-full hover:-translate-y-4 transition-all duration-300">
+                <figure class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-t-xl" src="./assets/menu4.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Online Table Booking</h2>
+                    <p>Reserve your table easily through our website or phone.</p>
+                    <p class="font-extrabold">400 L.E.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-sm h-full hover:-translate-y-4 transition-all duration-300">
+                <figure class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-t-xl" src="./assets/menu5.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Online Table Booking</h2>
+                    <p>Reserve your table easily through our website or phone.</p>
+                    <p class="font-extrabold">450 L.E.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-sm h-full hover:-translate-y-4 transition-all duration-300">
+                <figure class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-t-xl" src="./assets/menu6.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Online Table Booking</h2>
+                    <p>Reserve your table easily through our website or phone.</p>
+                    <p class="font-extrabold">350 L.E.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-sm h-full hover:-translate-y-4 transition-all duration-300">
+                <figure class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-t-xl" src="./assets/menu7.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Online Table Booking</h2>
+                    <p>Reserve your table easily through our website or phone.</p>
+                    <p class="font-extrabold">280 L.E.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-sm h-full hover:-translate-y-4 transition-all duration-300">
+                <figure class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover rounded-t-xl" src="./assets/menu8.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body flex flex-col flex-grow">
+                    <h2 class="card-title">Online Table Booking</h2>
+                    <p>Reserve your table easily through our website or phone.</p>
+                    <p class="font-extrabold">430 L.E.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="flex flex-col justify-between items-center ga bg-gray-800 p-[20px]">
+        <h6 class="text-white">&copy; Honda's Lounge. All rights reserved.</h6>
+        <ul class="list-unstyled flex justify-between items-center gap-5 text-white">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">TikTok</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="./js/home.js"></script>
+
+</body>
+
+</html>

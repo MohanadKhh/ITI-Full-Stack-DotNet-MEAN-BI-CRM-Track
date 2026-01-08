@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="hero__wrapper bg-[url('./assets/contact.jpg')] bg-cover bg-center text-slate-200 min-h-screen">
+
+        <!-- Navbar section -->
+        <div class="navbar shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1" class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <a href="home.html" class="btn btn-ghost text-sm md:text-xl">Honda's Lounge</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="home.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">Home</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="rounded-xl px-3 py-2 transition hover:bg-white/10 hover:shadow-lg hover:shadow-black/50">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end flex gap-5">
+                <a class="btn btn-sm lg:btn-md">Login</a>
+                <a class="btn btn-sm lg:btn-md">SignUp</a>
+            </div>
+        </div>
+
+
+        <div class="py-16 px-10 flex justify-center">
+
+            <div
+                class="backdrop-blur-md bg-black/40 p-10 rounded-2xl shadow-2xl w-full max-w-lg / sm:max-w-xl text-white">
+
+                <h2 class="text-4xl font-bold text-center mb-6">Contact Us</h2>
+
+                <form class="flex flex-col gap-6">
+
+                    <div>
+                        <label class="block mb-1">Name</label>
+                        <input type="text" class="input input-bordered w-full bg-white/80 text-black">
+                    </div>
+
+                    <div>
+                        <label class="block mb-1">Email</label>
+                        <input type="email" class="input input-bordered w-full bg-white/80 text-black">
+                    </div>
+
+                    <div>
+                        <label class="block mb-1">Phone</label>
+                        <input type="tel" class="input input-bordered w-full bg-white/80 text-black">
+                    </div>
+
+                    <div>
+                        <label class="block mb-1">Message</label>
+                        <textarea rows="4" class="textarea textarea-bordered w-full bg-white/80 text-black"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-full">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="flex flex-col justify-between items-center ga bg-gray-800 p-[20px]">
+        <h6 class="text-white">&copy; Honda's Lounge. All rights reserved.</h6>
+        <ul class="list-unstyled flex justify-between items-center gap-5 text-white">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">TikTok</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
