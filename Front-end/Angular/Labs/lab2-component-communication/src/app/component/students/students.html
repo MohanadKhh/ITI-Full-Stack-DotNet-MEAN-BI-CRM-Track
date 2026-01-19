@@ -1,0 +1,30 @@
+<h1 class="text-4xl font-extrabold text-center text-blue-900 mb-6 tracking-wide underline">Students List</h1>
+
+<table class="w-3/4 mx-auto border border-gray-300 rounded-lg overflow-hidden">
+    <thead class="bg-blue-400 text-white">
+        <tr>
+            <th class="px-4 py-2 text-left">Name</th>
+            <th class="px-4 py-2 text-left">Age</th>
+            <th class="px-4 py-2 text-left">Email</th>
+            <th class="px-4 py-2 text-left">GPA</th>
+        </tr>
+    </thead>
+
+    <tbody class="text-left">
+        <tr class="odd:bg-white even:bg-gray-200 hover:bg-blue-100 transition" *ngFor="let item of studentsArr">
+            <td class="px-4 py-2">{{item.name}}</td>
+            <td class="px-4 py-2">{{item.age}}</td>
+            <td class="px-4 py-2">{{item.email}}</td>
+            <td class="px-4 py-2">{{item.gpa}}</td>
+        </tr>
+
+        <!-- @for (item of studentsArr; track $index){
+        <tr class="odd:bg-white even:bg-gray-300">
+            <td class="px-4 py-2">{{item.name}}</td>
+            <td class="px-4 py-2">{{item.age}}</td>
+            <td class="px-4 py-2">{{item.email}}</td>
+            <td class="px-4 py-2">{{item.gpa}}</td>
+        </tr>
+        } -->
+    </tbody>
+</table>

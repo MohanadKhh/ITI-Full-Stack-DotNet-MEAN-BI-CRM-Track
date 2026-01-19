@@ -1,0 +1,21 @@
+<div class="flex">
+    <div class="flex flex-col gap-3 items-start m-8 w-64">
+        <label class="font-semibold">Name</label>
+        <input class="border rounded-lg px-2 py-1 w-full" type="text" [(ngModel)]="stName" placeholder="Enter Name">
+
+        <label class="font-semibold">Age</label>
+        <input class="border rounded-lg px-2 py-1 w-full" type="number" min="0" max="100" [(ngModel)]="stAge"
+            placeholder="Enter Age">
+    </div>
+
+    <div class="flex flex-col gap-3 items-start m-8 w-64">
+        <label class="font-semibold">Email</label>
+        <input class="border rounded-lg px-2 py-1 w-full" type="email" [(ngModel)]="stEmail" placeholder="Enter Email">
+
+        <label class="font-semibold">GPA</label>
+        <input class="border rounded-lg px-2 py-1 w-full" type="number" min="0" max="4" step="0.01" [(ngModel)]="stGPA"
+            placeholder="Enter GPA">
+    </div>
+</div>
+<button (click)="signUp($event)"
+    class="mx-8 bg-emerald-600 text-white font-semibold rounded-lg px-8 py-1 hover:cursor-pointer hover:scale-105 hover:bg-emerald-800 active:scale-95 active:bg-emerald-800">SignUp</button>

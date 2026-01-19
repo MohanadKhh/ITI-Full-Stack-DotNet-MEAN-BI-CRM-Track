@@ -1,0 +1,5 @@
+<div class="flex flex-col gap-5">
+  <app-register (sendDataEvt)="getData($event)"></app-register>
+  <hr>
+  <app-students [studentsArr] = "students"></app-students>
+</div>
