@@ -54,6 +54,7 @@ class Student implements StudentInterface {
     avgGrades(): number {
         return this.grades.reduce((sum, n) => sum + n, 0) / this.grades.length;
     }
+    
     getStStatus(): string {
         let stAvgGrade = this.avgGrades()
         if (stAvgGrade >= 90)
