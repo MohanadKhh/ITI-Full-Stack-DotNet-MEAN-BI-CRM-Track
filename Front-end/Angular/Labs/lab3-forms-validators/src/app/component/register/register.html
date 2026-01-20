@@ -1,0 +1,76 @@
+<div class="container mt-4">
+    <form [formGroup]="myForm">
+        <div class="row mb-3">
+            <div class="form-group col-4">
+                <label for="name">Name</label>
+                <input formControlName="stName" class="form-control" type="text" id="name"
+                    placeholder="Enter your name">
+                @if(myForm.controls.stName.touched && myForm.controls.stName.errors){
+                <span class="text-danger">
+                    @if(myForm.controls.stName.errors['required']){
+                    Name is required
+                    }
+                    @else if(myForm.controls.stName.errors['minlength']){
+                    Name length must be 3 letters or more
+                    }
+                </span>
+                }
+            </div>
+            <div class="form-group col-4">
+                <label for="age">Age</label>
+                <input formControlName="stAge" class="form-control" type="number" id="age" placeholder="Enter your age">
+                @if(myForm.controls.stAge.touched && myForm.controls.stAge.errors){
+                <span class="text-danger">
+                    @if(myForm.controls.stAge.errors['required']){
+                    Age is required
+                    }
+                    @else if(myForm.controls.stAge.errors['min']){
+                    Age must be between 10 and 80
+                    }
+                    @else if(myForm.controls.stAge.errors['max']){
+                    Age must be between 10 and 80
+                    }
+                </span>
+                }
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="form-group col-4">
+                <label for="email">Email</label>
+                <input formControlName="stEmail" class="form-control" type="email" id="email"
+                    placeholder="Enter your email">
+                @if(myForm.controls.stEmail.touched && myForm.controls.stEmail.errors){
+                <span class="text-danger">
+                    @if(myForm.controls.stEmail.errors['required']){
+                    Email is required
+                    }
+                    @else if(myForm.controls.stEmail.errors['email']){
+                    Email invalid
+                    }
+                </span>
+                }
+            </div>
+            <div class="form-group col-4">
+                <label for="gpa">GPA</label>
+                <input formControlName="stGPA" class="form-control" type="number" step="0.01" id="gpa"
+                    placeholder="Enter your GPA">
+                @if(myForm.controls.stGPA.touched && myForm.controls.stGPA.errors){
+                <span class="text-danger">
+                    @if(myForm.controls.stGPA.errors['required']){
+                    GPA is required
+                    }
+                    @else if(myForm.controls.stGPA.errors['min']){
+                    GPA must be between 0 and 4
+                    }
+                    @else if(myForm.controls.stGPA.errors['max']){
+                    GPA must be between 0 and 4
+                    }
+                </span>
+                }
+            </div>
+        </div>
+
+        <input class="btn btn-success px-4" (click)="add()" type="submit">
+    </form>
+</div>

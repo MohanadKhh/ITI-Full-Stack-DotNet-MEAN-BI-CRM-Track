@@ -1,0 +1,23 @@
+<h1 class="text-center text-secondary fw-bold mb-4 text-decoration-underline">
+    Students List
+</h1>
+
+<table class="table table-bordered table-striped table-hover w-75 mx-auto">
+    <thead class="table-primary">
+        <tr>
+            <th class="text-start">Name</th>
+            <th class="text-start">Age</th>
+            <th class="text-start">Email</th>
+            <th class="text-start">GPA</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let item of studentsArr">
+            <td>{{ item.name }}</td>
+            <td>{{ item.age }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.gpa }}</td>
+        </tr>
+    </tbody>
+</table>
