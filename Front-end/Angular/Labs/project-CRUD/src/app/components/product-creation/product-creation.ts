@@ -11,11 +11,12 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styles: ``,
 })
 export class ProductCreation {
-  productId: number = 0;
-  product = signal({} as product);
   colors: string[] = [];
 
-  constructor(private router: Router, private productService: ProductsService) { }
+  constructor(
+    private router: Router,
+    private productService: ProductsService
+  ) { }
 
   myForm = new FormGroup({
     name: new FormControl("", [Validators.required, Validators.minLength(2)]),
@@ -25,31 +26,18 @@ export class ProductCreation {
     colors: new FormControl<string[]>([], [Validators.required]),
     price: new FormControl(0, [Validators.required, Validators.min(1)]),
     rating: new FormControl(0, [Validators.required, Validators.min(0), Validators.max(5)]),
-    image: new FormControl("", [Validators.required, Validators.pattern(/^images\/[a-zA-Z0-9_-]+\.(png|jpg|jpeg|webp)$/)]),
+    image: new FormControl("", [
+      Validators.required,
+      Validators.pattern(
+        /^(https?:\/\/.+)|(images\/[a-zA-Z0-9_-]+\.(png|jpg|jpeg|webp))$/)
+    ]),
     inStock: new FormControl(false, [Validators.required])
-  })
-
-  ngOnInit() {
-    // Get all products to determine the next ID
-    this.productService.getProducts().subscribe({
-      next: (products) => {
-        // Find the maximum ID and add 1
-        const maxId = Math.max(...products.map(p => p.id), 0);
-        this.productId = maxId + 1;
-      },
-      error: (err) => {
-        console.error('Error fetching products:', err);
-        this.productId = 1; // Default to 1 if error
-      }
-    });
-  }
+  });
 
   toggleColor(event: any) {
     const color = event.target.value;
     if (event.target.checked) {
-      if (!this.colors.includes(color)) {
-        this.colors.push(color);
-      }
+      this.colors.push(color);
     } else {
       this.colors = this.colors.filter(c => c !== color);
     }
@@ -58,27 +46,25 @@ export class ProductCreation {
 
   createProduct() {
     if (this.myForm.valid) {
-      const newProduct: product = {
-        id: this.productId,
-        name: this.myForm.value.name || "",
-        description: this.myForm.value.description || "",
-        category: this.myForm.value.category || "",
-        brand: this.myForm.value.brand || "",
-        colors: this.myForm.value.colors || [],
-        price: this.myForm.value.price ? +this.myForm.value.price : 0,
-        rating: this.myForm.value.rating ? +this.myForm.value.rating : 0,
-        image: this.myForm.value.image || "",
-        inStock: this.myForm.value.inStock || false,
+      const newProduct: Omit<product, 'id'> = {
+        name: this.myForm.value.name!,
+        description: this.myForm.value.description!,
+        category: this.myForm.value.category!,
+        brand: this.myForm.value.brand!,
+        colors: this.myForm.value.colors!,
+        price: +this.myForm.value.price!,
+        rating: +this.myForm.value.rating!,
+        image: this.myForm.value.image!,
+        inStock: !!this.myForm.value.inStock,
       };
+
       this.productService.createProduct(newProduct).subscribe({
-        next: () => {
-          console.log("Product created successfully");
-        },
-        complete: () => {
-          this.router.navigate(['/products']);
+        next: (created) => {
+          // ✅ created.id is STRING
+          this.router.navigate(['/products', created.id]);
         },
         error: (err) => {
-          console.error("Error creating product:", err);
+          console.error('Error creating product:', err);
         }
       });
     }

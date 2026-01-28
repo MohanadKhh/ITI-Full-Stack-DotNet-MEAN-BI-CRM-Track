@@ -1,41 +1,65 @@
 <div>
-    <div class="flex gap-5 justify-start items-start p-16">
-        <img [src]="product().image" alt="{{ product().name }}" class="rounded-2xl py-3 max-h-96 object-cover">
-        <div class="py-3 px-24">
-            <h2 class="text-2xl font-semibold mb-2">{{ product().name }}</h2>
-            <div class="body flex flex-col gap-y-5">
-                <p>Description: {{ product().description }}</p>
-                <p>Brand: {{ product().brand }}</p>
-                <p>Category: {{ product().category }}</p>
-                <p>Color:
-                    @for(color of product().colors; track $index) {
-                    @if($first) {
-                    <span>{{color}} |</span>
-                    } @else if($last) {
-                    <span> {{color}}</span>
-                    } @else {
-                    <span> {{color}} |</span>
-                    }
-                    }
-                </p>
-                <p>Rating: {{ product().rating }} ⭐</p>
+  <div class="flex gap-5 justify-start items-start p-16">
+    
+    <img
+      [src]="product().image"
+      [alt]="product().name"
+      class="rounded-2xl py-3 max-h-96 object-cover"
+    />
 
-            </div>
-            <div class="flex justify-between mt-5">
-                <span class="font-bold text-2xl">{{ product().price }} EGP</span>
-                @if(product().inStock) {
-                <span class="text-green-600 font-semibold ml-4">In Stock</span>
-                } @else {
-                <span class="text-red-600 font-semibold ml-4">Out of Stock</span>
-                }
-            </div>
+    <div class="py-3 px-24">
+      <h2 class="text-2xl font-semibold mb-2">
+        {{ product().name }}
+      </h2>
 
-            <div class="flex justify-between py-5">
-                <button [routerLinkActiveOptions]="{exact:true}" routerLinkActive=""
-                    routerLink="/products/update/{{productId}}"
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:cursor-pointer">Update</button>
-                <button (click)="deleted(productId)"
-                    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2 hover:cursor-pointer">Delete</button>
-            </div>
-        </div>
+      <div class="flex flex-col gap-y-5">
+        <p>Description: {{ product().description }}</p>
+        <p>Brand: {{ product().brand }}</p>
+        <p>Category: {{ product().category }}</p>
+
+        <p>
+          Colors:
+          @for (color of product().colors; track $index) {
+            <span>
+              {{ color }}{{ !$last ? ' | ' : '' }}
+            </span>
+          }
+        </p>
+
+        <p>Rating: {{ product().rating }} ⭐</p>
+      </div>
+
+      <div class="flex justify-between mt-5">
+        <span class="font-bold text-2xl">
+          {{ product().price }} EGP
+        </span>
+
+        @if (product().inStock) {
+          <span class="text-green-600 font-semibold">
+            In Stock
+          </span>
+        } @else {
+          <span class="text-red-600 font-semibold">
+            Out of Stock
+          </span>
+        }
+      </div>
+
+      <div class="flex justify-between py-5">
+        <!-- ✅ Correct routerLink binding -->
+        <button
+          [routerLink]="['/products/update', productId]"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">
+          Update
+        </button>
+
+        <!-- ✅ Correct delete method -->
+        <button
+          (click)="deleteProduct()"
+          class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2 cursor-pointer">
+          Delete
+        </button>
+      </div>
     </div>
+  </div>
+</div>

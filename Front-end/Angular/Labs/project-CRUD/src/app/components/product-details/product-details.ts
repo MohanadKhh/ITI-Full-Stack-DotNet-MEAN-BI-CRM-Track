@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { ActivatedRoute, RouterLink, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { ProductsService } from '../../services/products-service';
 import { product } from '../../utils/product';
 
@@ -10,33 +10,42 @@ import { product } from '../../utils/product';
   styles: ``,
 })
 export class ProductDetails {
-  productId: number = 0;
+
+  productId!: string;
   product = signal({} as product);
-  constructor(private route: ActivatedRoute, private productService: ProductsService) {
-    this.productId = +this.route.snapshot.params['id'];
-  }
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private productService: ProductsService
+  ) {}
 
   ngOnInit() {
+    const id = this.route.snapshot.paramMap.get('id');
+
+    if (!id) {
+      console.error('Invalid product id');
+      return;
+    }
+
+    this.productId = id;
+
     this.productService.getProductById(this.productId).subscribe({
       next: (data) => {
         this.product.set(data);
       },
       error: (err) => {
-        console.error('Error fetching product details:', err);
+        console.error('Error fetching product:', err);
       }
     });
   }
 
-  deleted(productId: number) {
-    this.productService.deleteById(productId).subscribe({
+  deleteProduct() {
+    this.productService.deleteById(this.productId).subscribe({
       next: () => {
         console.log('Product deleted successfully');
+        this.router.navigate(['/products']);
       },
-
-      complete: () => {
-        window.location.href = '/products';
-      },
-
       error: (err) => {
         console.error('Error deleting product:', err);
       }

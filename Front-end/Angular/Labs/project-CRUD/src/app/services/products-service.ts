@@ -13,19 +13,20 @@ export class ProductsService {
     return this.http.get<product[]>(this.baseUrl);
   }
 
-  getProductById(id: number) {
+  getProductById(id: string) {
     return this.http.get<product>(`${this.baseUrl}/${id}`);
   }
 
-  updateById(id: number, newProduct: product) {
+  updateById(id: string, newProduct: product) {
     return this.http.put(`${this.baseUrl}/${id}`, newProduct);
   }
 
-  createProduct(newProduct: product) {
-    return this.http.post(this.baseUrl, newProduct);
+  createProduct(newProduct: Omit<product, 'id'>) {
+    return this.http.post<product>(this.baseUrl, newProduct);
   }
 
-  deleteById(id: number) {
+
+  deleteById(id: string) {
     return this.http.delete(`${this.baseUrl}/${id}`);
   }
 }
