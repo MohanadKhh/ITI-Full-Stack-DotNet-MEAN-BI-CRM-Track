@@ -1,0 +1,294 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "name": "Smart Watch",
+      "description": "Advanced fitness tracker with heart rate monitor and GPS",
+      "category": "Electr",
+      "brand": "TechFit",
+      "colors": [
+        "Black",
+        "Rose Gold",
+        "Silver",
+        "Blue",
+        "Green",
+        "White",
+        "Red"
+      ],
+      "price": 215,
+      "rating": 4,
+      "image": "images/Headphones_.jpg",
+      "inStock": false
+    },
+    {
+      "id": "4",
+      "name": "Water Bottle",
+      "description": "Insulated stainless steel bottle keeps drinks cold for 24 hours",
+      "price": 29.99,
+      "category": "Sports",
+      "brand": "HydroLife",
+      "rating": 4.8,
+      "colors": [
+        "Silver",
+        "Black",
+        "Blue",
+        "Pink"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "5",
+      "name": "Yoga Mat",
+      "description": "Non-slip yoga mat with extra cushioning for joint protection",
+      "price": 49.99,
+      "category": "Sports",
+      "brand": "ZenFlow",
+      "rating": 4.6,
+      "colors": [
+        "Purple",
+        "Blue",
+        "Green",
+        "Pink"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "6",
+      "name": "Leather Wallet",
+      "description": "Slim genuine leather wallet with RFID protection",
+      "price": 39.99,
+      "category": "Accessories",
+      "brand": "LeatherCraft",
+      "rating": 4.4,
+      "colors": [
+        "Brown",
+        "Black",
+        "Tan"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": false
+    },
+    {
+      "id": "7",
+      "name": "Coffee Maker",
+      "description": "Programmable coffee maker with thermal carafe and auto-brew",
+      "price": 79.99,
+      "category": "Kitchen",
+      "brand": "BrewMaster",
+      "rating": 4.7,
+      "colors": [
+        "Black",
+        "Silver"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "8",
+      "name": "Running Shoes",
+      "description": "Lightweight running shoes with responsive cushioning",
+      "price": 119.99,
+      "category": "Footwear",
+      "brand": "RunFast",
+      "rating": 4.5,
+      "colors": [
+        "Black/White",
+        "Blue/Orange",
+        "Gray/Green"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "9",
+      "name": "Desk Lamp",
+      "description": "LED desk lamp with adjustable brightness and USB charging port",
+      "price": 44.99,
+      "category": "Home",
+      "brand": "BrightLife",
+      "rating": 4.6,
+      "colors": [
+        "White",
+        "Black",
+        "Silver"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "10",
+      "name": "Backpack",
+      "description": "Durable laptop backpack with multiple compartments and USB port",
+      "price": 59.99,
+      "category": "Bags",
+      "brand": "TravelPro",
+      "rating": 4.4,
+      "colors": [
+        "Black",
+        "Gray",
+        "Navy"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "11",
+      "name": "Sunglasses",
+      "description": "Polarized sunglasses with UV400 protection and stylish design",
+      "price": 149.99,
+      "category": "Accessories",
+      "brand": "StyleVision",
+      "rating": 4.5,
+      "colors": [
+        "Black",
+        "Tortoiseshell",
+        "Blue"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "12",
+      "name": "Phone Case",
+      "description": "Protective phone case with shock absorption and slim design",
+      "price": 19.99,
+      "category": "Electronics",
+      "brand": "CaseGuard",
+      "rating": 4.3,
+      "colors": [
+        "Clear",
+        "Black",
+        "Blue",
+        "Red"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "13",
+      "name": "Notebook",
+      "description": "Premium hardcover notebook with dotted pages and elastic band",
+      "price": 12.99,
+      "category": "Stationery",
+      "brand": "WriteWell",
+      "rating": 4.8,
+      "colors": [
+        "Black",
+        "Red",
+        "Blue",
+        "Green"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": false
+    },
+    {
+      "id": "14",
+      "name": "Bluetooth Speaker",
+      "description": "Portable waterproof speaker with 12-hour battery life",
+      "price": 69.99,
+      "category": "Electronics",
+      "brand": "AudioMax",
+      "rating": 4.6,
+      "colors": [
+        "Black",
+        "Blue",
+        "Red"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "15",
+      "name": "Winter Jacket",
+      "description": "Warm insulated jacket with water-resistant outer shell",
+      "price": 159.99,
+      "category": "Clothing",
+      "brand": "WinterGuard",
+      "rating": 4.7,
+      "colors": [
+        "Black",
+        "Navy",
+        "Gray",
+        "Red"
+      ],
+      "image": "/images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": "16",
+      "name": "ahmed",
+      "description": "Aaaaaadvanced fitness tracker with heart rate monitor and GPS",
+      "category": "aaaa",
+      "brand": "aaaa",
+      "colors": [
+        "Red",
+        "Black",
+        "White"
+      ],
+      "price": 25,
+      "rating": 1.8,
+      "image": "images/logo.png",
+      "inStock": false
+    },
+    {
+      "id": 17,
+      "name": "wefwwe",
+      "description": "wefwefwfwf",
+      "category": "wfwf",
+      "brand": "wfwffw",
+      "colors": [
+        "Green"
+      ],
+      "price": 5,
+      "rating": 4,
+      "image": "images/Headphones_.jpg",
+      "inStock": true
+    },
+    {
+      "id": 18,
+      "name": "2e2e",
+      "description": "dfdd",
+      "category": "2d2d2",
+      "brand": "dd",
+      "colors": [
+        "Red"
+      ],
+      "price": 15,
+      "rating": 0.64,
+      "image": "images/logo.png",
+      "inStock": true
+    },
+    {
+      "id": 19,
+      "name": "ddddd",
+      "description": "dd",
+      "category": "ddddd",
+      "brand": "ddd",
+      "colors": [
+        "Blue",
+        "Green"
+      ],
+      "price": 20,
+      "rating": 4,
+      "image": "images/Headphones_.jpg",
+      "inStock": false
+    },
+    {
+      "id": 20,
+      "name": "ahmed",
+      "description": "Advanced fitness tracker with heart rate monitor and GPS",
+      "category": "aaaa",
+      "brand": "TechFit",
+      "colors": [
+        "Red",
+        "Blue"
+      ],
+      "price": 15,
+      "rating": 4,
+      "image": "images/Headphones_.jpg",
+      "inStock": false
+    }
+  ]
+}

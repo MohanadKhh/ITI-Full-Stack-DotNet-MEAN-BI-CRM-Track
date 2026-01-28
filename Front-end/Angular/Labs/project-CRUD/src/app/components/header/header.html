@@ -1,0 +1,15 @@
+<div class="flex justify-between items-center py-3 px-8 bg-[#2b054f] text-[#f5832c]">
+    <div class="w-25">
+        <img src="images/logo.png" width="80" height="80" class="object-contain" />
+    </div>
+
+    <ul class="flex gap-10 justify-center text-lg font-semibold">
+        <li><a class="nav-item" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active-link"
+                routerLink="/products">Home</a></li>
+        <li><a class="nav-item" routerLinkActive="active-link" routerLink="/about">About</a></li>
+        <li><a class="nav-item" routerLinkActive="active-link" routerLink="/contact">Contact</a></li>
+    </ul>
+
+    <button
+        class="bg-[#83165b] px-5 py-3 rounded-2xl text-white font-bold hover:scale-105 hover:cursor-pointer active:scale-90">Login</button>
+</div>

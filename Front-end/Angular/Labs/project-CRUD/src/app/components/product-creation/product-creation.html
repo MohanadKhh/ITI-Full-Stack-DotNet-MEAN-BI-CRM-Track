@@ -1,0 +1,210 @@
+<div class="max-w-4xl mx-auto my-5">
+    <form [formGroup]="myForm" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col">
+                <label for="name" class="text-sm font-medium text-gray-700 mb-2">Name</label>
+                <input formControlName="name" type="text" id="name" placeholder="Enter Product's name"
+                    class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                @if(myForm.controls.name.touched && myForm.controls.name.errors){
+                <span class="text-red-600 text-sm mt-1">
+                    @if(myForm.controls.name.errors['required']){
+                    Name is required
+                    }
+                    @else if(myForm.controls.name.errors['minlength']){
+                    Name length must be 2 letters or more
+                    }
+                </span>
+                }
+            </div>
+            <div class="flex flex-col">
+                <label for="description" class="text-sm font-medium text-gray-700 mb-2">Description</label>
+                <input formControlName="description" type="text" id="description"
+                    placeholder="Enter Product's description"
+                    class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                @if(myForm.controls.description.touched && myForm.controls.description.errors){
+                <span class="text-red-600 text-sm mt-1">
+                    @if(myForm.controls.description.errors['required']){
+                    Description is required
+                    }
+                    @else if(myForm.controls.description.errors['minlength']){
+                    Description length must be 2 letters or more
+                    }
+                </span>
+                }
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col">
+                <label for="brand" class="text-sm font-medium text-gray-700 mb-2">Brand</label>
+                <input formControlName="brand" type="text" id="brand" placeholder="Enter Product's brand"
+                    class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                @if(myForm.controls.brand.touched && myForm.controls.brand.errors){
+                <span class="text-red-600 text-sm mt-1">
+                    @if(myForm.controls.brand.errors['required']){
+                    Brand is required
+                    }
+                    @else if(myForm.controls.brand.errors['minlength']){
+                    Brand length must be 2 letters or more
+                    }
+                </span>
+                }
+            </div>
+            <div class="flex flex-col">
+                <label for="category" class="text-sm font-medium text-gray-700 mb-2">Category</label>
+                <input formControlName="category" type="text" id="category" placeholder="Enter Product's category"
+                    class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                @if(myForm.controls.category.touched && myForm.controls.category.errors){
+                <span class="text-red-600 text-sm mt-1">
+                    @if(myForm.controls.category.errors['required']){
+                    Category is required
+                    }
+                    @else if(myForm.controls.category.errors['minlength']){
+                    Category length must be 2 letters or more
+                    }
+                </span>
+                }
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col">
+                <label for="rating" class="text-sm font-medium text-gray-700 mb-2">Rating</label>
+                <input formControlName="rating" type="number" id="rating" placeholder="Enter Product's rating"
+                    step="0.1"
+                    class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                @if(myForm.controls.rating.touched && myForm.controls.rating.errors){
+                <span class="text-red-600 text-sm mt-1">
+                    @if(myForm.controls.rating.errors['required']){
+                    Rating is required
+                    }
+                    @else if(myForm.controls.rating.errors['min']){
+                    Rating length must be between 0 to 5
+                    }
+                    @else if(myForm.controls.rating.errors['max']){
+                    Rating length must be between 0 to 5
+                    }
+                </span>
+                }
+            </div>
+            <div class="flex flex-col">
+                <label for="price" class="text-sm font-medium text-gray-700 mb-2">Price</label>
+                <input formControlName="price" type="number" id="price" placeholder="Enter Product's price" step="0.01"
+                    class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                @if(myForm.controls.price.touched && myForm.controls.price.errors){
+                <span class="text-red-600 text-sm mt-1">
+                    @if(myForm.controls.price.errors['required']){
+                    Price is required
+                    }
+                    @else if(myForm.controls.price.errors['min']){
+                    Price must be a positive number
+                    }
+                </span>
+                }
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col">
+                <label for="image" class="text-sm font-medium text-gray-700 mb-2">Image URL</label>
+                <input formControlName="image" type="text" id="image" placeholder="Enter Product's image URL"
+                    class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                @if(myForm.controls.image.touched && myForm.controls.image.errors){
+                <span class="text-red-600 text-sm mt-1">
+                    @if(myForm.controls.image.errors['pattern']){
+                    Please enter a valid image URL
+                    }
+                    @else if(myForm.controls.image.errors['required']){
+                    Image URL is required
+                    }
+                </span>
+                }
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex flex-col">
+                    <label class="text-sm font-medium text-gray-700 mb-2">Colors</label>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="red" value="Red" (change)="toggleColor($event)"
+                                class="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500 cursor-pointer">
+                            <label for="red" class="ml-2 text-sm font-medium text-gray-700 cursor-pointer">Red</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="blue" value="Blue" (change)="toggleColor($event)"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 cursor-pointer">
+                            <label for="blue" class="ml-2 text-sm font-medium text-gray-700 cursor-pointer">Blue</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="green" value="Green" (change)="toggleColor($event)"
+                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 cursor-pointer">
+                            <label for="green"
+                                class="ml-2 text-sm font-medium text-gray-700 cursor-pointer">Green</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="black" value="Black" (change)="toggleColor($event)"
+                                class="w-4 h-4 text-gray-600 bg-gray-100 border-gray-300 rounded focus:ring-gray-500 cursor-pointer">
+                            <label for="black"
+                                class="ml-2 text-sm font-medium text-gray-700 cursor-pointer">Black</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="white" value="White" (change)="toggleColor($event)"
+                                class="w-4 h-4 text-gray-400 bg-gray-100 border-gray-300 rounded focus:ring-gray-500 cursor-pointer">
+                            <label for="white"
+                                class="ml-2 text-sm font-medium text-gray-700 cursor-pointer">White</label>
+                        </div>
+                    </div>
+                    @if(myForm.controls.colors.touched && myForm.controls.colors.errors){
+                    <span class="text-red-600 text-sm mt-1">
+                        @if(myForm.controls.colors.errors['required']){
+                        Please select at least one color
+                        }
+                    </span>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col">
+                <label class="text-sm font-medium text-gray-700 mb-2">Stock Status</label>
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <input formControlName="inStock" type="radio" id="inStock" [value]="true"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 cursor-pointer">
+                        <label for="inStock" class="ml-2 text-sm font-medium text-gray-700 cursor-pointer">In Stock
+                        </label>
+                    </div>
+                    <div class="flex items-center">
+                        <input formControlName="inStock" type="radio" id="outStock" [value]="false"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 cursor-pointer">
+                        <label for="outStock" class="ml-2 text-sm font-medium text-gray-700 cursor-pointer">Out of
+                            Stock</label>
+                    </div>
+                </div>
+                @if(myForm.controls.inStock.touched && myForm.controls.inStock.errors){
+                <span class="text-red-600 text-sm mt-1">
+                    @if(myForm.controls.inStock.errors['required']){
+                    Stock status is required
+                    }
+                </span>
+                }
+            </div>
+        </div>
+
+        <div class="flex justify-end">
+            <button type="button" (click)="createProduct()"
+                class="px-6 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                Create Product
+            </button>
+
+            <button type="button" (click)="cancelCreate()"
+                class="ml-4 px-6 py-2 bg-gray-600 text-white font-medium rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                Cancel
+            </button>
+        </div>
+
+    </form>
+</div>
