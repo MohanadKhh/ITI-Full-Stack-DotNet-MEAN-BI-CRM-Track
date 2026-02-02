@@ -1,0 +1,15 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\bin\Debug\net10.0\Task2_Duration.exe
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\bin\Debug\net10.0\Task2_Duration.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\bin\Debug\net10.0\Task2_Duration.runtimeconfig.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\bin\Debug\net10.0\Task2_Duration.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\bin\Debug\net10.0\Task2_Duration.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\Task2_Duration.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\Task2_Duration.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\Task2_Duration.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\Task2_Duration.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\Task2_Duration.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\Task2_Duration.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\refint\Task2_Duration.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\Task2_Duration.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\Task2_Duration.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task2_Duration\obj\Debug\net10.0\ref\Task2_Duration.dll

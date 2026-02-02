@@ -1,0 +1,15 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\bin\Debug\net10.0\Employee.exe
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\bin\Debug\net10.0\Employee.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\bin\Debug\net10.0\Employee.runtimeconfig.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\bin\Debug\net10.0\Employee.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\bin\Debug\net10.0\Employee.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\Employee.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\Employee.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\Employee.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\Employee.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\Employee.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\Employee.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\refint\Employee.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\Employee.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\Employee.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab2\Employee\obj\Debug\net10.0\ref\Employee.dll

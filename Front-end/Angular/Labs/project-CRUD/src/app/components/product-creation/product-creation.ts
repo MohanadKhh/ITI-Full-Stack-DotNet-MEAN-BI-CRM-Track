@@ -63,7 +63,7 @@ export class ProductCreation {
           // ✅ created.id is STRING
           this.router.navigate(['/products', created.id]);
         },
-        error: (err) => {
+        error: (err) => {+
           console.error('Error creating product:', err);
         }
       });

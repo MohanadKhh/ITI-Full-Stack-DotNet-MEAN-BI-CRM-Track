@@ -1,0 +1,15 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\Task2_Math_Operations.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\Task2_Math_Operations.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\Task2_Math_Operations.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\Task2_Math_Operations.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\Task2_Math_Operations.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\bin\Debug\net10.0\Task2_Math_Operations.exe
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\bin\Debug\net10.0\Task2_Math_Operations.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\bin\Debug\net10.0\Task2_Math_Operations.runtimeconfig.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\bin\Debug\net10.0\Task2_Math_Operations.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\bin\Debug\net10.0\Task2_Math_Operations.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\Task2_Math_Operations.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\refint\Task2_Math_Operations.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\Task2_Math_Operations.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\Task2_Math_Operations.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task2_Math_Operations\obj\Debug\net10.0\ref\Task2_Math_Operations.dll

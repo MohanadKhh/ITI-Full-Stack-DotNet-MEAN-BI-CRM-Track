@@ -1,0 +1,15 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\bin\Debug\net10.0\Task1_point3D_Math.exe
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\bin\Debug\net10.0\Task1_point3D_Math.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\bin\Debug\net10.0\Task1_point3D_Math.runtimeconfig.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\bin\Debug\net10.0\Task1_point3D_Math.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\bin\Debug\net10.0\Task1_point3D_Math.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\Task1_point3D_Math.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\Task1_point3D_Math.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\Task1_point3D_Math.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\Task1_point3D_Math.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\Task1_point3D_Math.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\Task1_point3D_Math.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\refint\Task1_point3D_Math.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\Task1_point3D_Math.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\Task1_point3D_Math.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab3\Task1_point3D\obj\Debug\net10.0\ref\Task1_point3D_Math.dll

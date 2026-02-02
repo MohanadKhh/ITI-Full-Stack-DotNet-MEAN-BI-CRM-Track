@@ -1,0 +1,15 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\bin\Debug\net10.0\Task1_Singleton.exe
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\bin\Debug\net10.0\Task1_Singleton.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\bin\Debug\net10.0\Task1_Singleton.runtimeconfig.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\bin\Debug\net10.0\Task1_Singleton.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\bin\Debug\net10.0\Task1_Singleton.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\Task1_Singleton.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\Task1_Singleton.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\Task1_Singleton.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\Task1_Singleton.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\Task1_Singleton.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\Task1_Singleton.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\refint\Task1_Singleton.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\Task1_Singleton.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\Task1_Singleton.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab4\Task1_Singleton\obj\Debug\net10.0\ref\Task1_Singleton.dll

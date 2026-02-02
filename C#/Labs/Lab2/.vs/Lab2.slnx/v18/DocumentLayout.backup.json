@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab2\\employee\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|solutionrelative:employee\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab2\\employee\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|solutionrelative:employee\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab2\\employee\\securitylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|solutionrelative:employee\\securitylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab2\\employee\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|solutionrelative:employee\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab2\\employee\\hiredata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AA6115-7C7E-5EC9-663C-1E9D7CB118E1}|Employee\\Employee.csproj|solutionrelative:employee\\hiredata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SecurityLevel.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\SecurityLevel.cs",
+              "RelativeDocumentMoniker": "Employee\\SecurityLevel.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\SecurityLevel.cs",
+              "RelativeToolTip": "Employee\\SecurityLevel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T16:08:21.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HireData.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\HireData.cs",
+              "RelativeDocumentMoniker": "Employee\\HireData.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\HireData.cs",
+              "RelativeToolTip": "Employee\\HireData.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T16:06:41.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\Gender.cs",
+              "RelativeDocumentMoniker": "Employee\\Gender.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\Gender.cs",
+              "RelativeToolTip": "Employee\\Gender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T16:04:38.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee\\Employee.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\Employee.cs",
+              "RelativeToolTip": "Employee\\Employee.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T16:00:46.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\Program.cs",
+              "RelativeDocumentMoniker": "Employee\\Program.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab2\\Employee\\Program.cs*",
+              "RelativeToolTip": "Employee\\Program.cs*",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwC8AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T15:39:52.859Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
