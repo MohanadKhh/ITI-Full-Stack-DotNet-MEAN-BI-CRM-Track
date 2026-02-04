@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab7\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab7\\library\\libraryengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|solutionrelative:library\\libraryengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab7\\library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|solutionrelative:library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab7\\library\\bookfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|solutionrelative:library\\bookfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab7\\library\\mydelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|library\\library.csproj|solutionrelative:library\\mydelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyDelegate.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\MyDelegate.cs",
+              "RelativeDocumentMoniker": "library\\MyDelegate.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\MyDelegate.cs*",
+              "RelativeToolTip": "library\\MyDelegate.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T23:29:45.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibraryEngine.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\LibraryEngine.cs",
+              "RelativeDocumentMoniker": "library\\LibraryEngine.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\LibraryEngine.cs*",
+              "RelativeToolTip": "library\\LibraryEngine.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T23:06:36.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookFunctions.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\BookFunctions.cs",
+              "RelativeDocumentMoniker": "library\\BookFunctions.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\BookFunctions.cs",
+              "RelativeToolTip": "library\\BookFunctions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T13:11:07.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\Book.cs",
+              "RelativeDocumentMoniker": "library\\Book.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\Book.cs*",
+              "RelativeToolTip": "library\\Book.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T13:01:57.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\Program.cs",
+              "RelativeDocumentMoniker": "library\\Program.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab7\\library\\Program.cs*",
+              "RelativeToolTip": "library\\Program.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T13:01:17.298Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

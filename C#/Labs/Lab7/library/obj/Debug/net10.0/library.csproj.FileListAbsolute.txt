@@ -1,0 +1,15 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\bin\Debug\net10.0\library.exe
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\bin\Debug\net10.0\library.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\bin\Debug\net10.0\library.runtimeconfig.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\bin\Debug\net10.0\library.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\bin\Debug\net10.0\library.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\library.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\library.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\library.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\library.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\library.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\library.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\refint\library.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\library.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\library.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab7\library\obj\Debug\net10.0\ref\library.dll

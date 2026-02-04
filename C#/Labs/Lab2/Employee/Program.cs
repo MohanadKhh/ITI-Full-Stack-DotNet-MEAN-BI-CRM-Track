@@ -6,6 +6,8 @@
         {
             Employee[] employees = new Employee[3];
 
+            #region Store Employees Info
+
             for (int i = 0; i < employees.Length; i++)
             {
                 employees[i] = new Employee();
@@ -100,6 +102,16 @@
             {
                 Console.WriteLine(e.print());
             }
+            #endregion
+
+            #region Sort Employees
+            employees.Sort();
+            Console.WriteLine("\n\nEmployees after sorting: ");
+            foreach(Employee e in employees)
+            {
+                Console.WriteLine(e.print());
+            }
+            #endregion
         }
     }
 }
