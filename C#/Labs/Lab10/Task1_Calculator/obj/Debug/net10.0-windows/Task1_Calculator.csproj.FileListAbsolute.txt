@@ -1,0 +1,17 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\bin\Debug\net10.0-windows\Task1_Calculator.exe
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\bin\Debug\net10.0-windows\Task1_Calculator.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\bin\Debug\net10.0-windows\Task1_Calculator.runtimeconfig.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\bin\Debug\net10.0-windows\Task1_Calculator.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\bin\Debug\net10.0-windows\Task1_Calculator.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.FrmCalculator.resources
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.csproj.GenerateResource.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\refint\Task1_Calculator.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\Task1_Calculator.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab10\Task1_Calculator\obj\Debug\net10.0-windows\ref\Task1_Calculator.dll

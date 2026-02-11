@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab10\\task2_ado\\frminsinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|solutionrelative:task2_ado\\frminsinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab10\\task2_ado\\frminsinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|solutionrelative:task2_ado\\frminsinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab10\\task2_ado\\frminsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|solutionrelative:task2_ado\\frminsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\task2_ado\\frminsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|solutionrelative:task2_ado\\frminsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab10\\task2_ado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F8407A-65D0-4ED7-9A73-8D0D8B5A4A87}|Task2_ADO\\Task2_ADO.csproj|solutionrelative:task2_ado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmInsInsert.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\FrmInsInsert.cs",
+              "RelativeDocumentMoniker": "Task2_ADO\\FrmInsInsert.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\FrmInsInsert.cs*",
+              "RelativeToolTip": "Task2_ADO\\FrmInsInsert.cs*",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwEQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:52:43.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmInsInsert.cs [Design]",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\FrmInsInsert.cs",
+              "RelativeDocumentMoniker": "Task2_ADO\\FrmInsInsert.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\FrmInsInsert.cs [Design]*",
+              "RelativeToolTip": "Task2_ADO\\FrmInsInsert.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:52:39.215Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmInsUpdate.cs [Design]",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\FrmInsUpdate.cs",
+              "RelativeDocumentMoniker": "Task2_ADO\\FrmInsUpdate.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\FrmInsUpdate.cs [Design]",
+              "RelativeToolTip": "Task2_ADO\\FrmInsUpdate.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T16:43:12.267Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmInsUpdate.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\FrmInsUpdate.cs",
+              "RelativeDocumentMoniker": "Task2_ADO\\FrmInsUpdate.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\FrmInsUpdate.cs",
+              "RelativeToolTip": "Task2_ADO\\FrmInsUpdate.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAqwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T16:42:57.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\Program.cs",
+              "RelativeDocumentMoniker": "Task2_ADO\\Program.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab10\\Task2_ADO\\Program.cs",
+              "RelativeToolTip": "Task2_ADO\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T16:12:58.096Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
