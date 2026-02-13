@@ -1,0 +1,15 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\bin\Debug\net10.0\Company-events.exe
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\bin\Debug\net10.0\Company-events.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\bin\Debug\net10.0\Company-events.runtimeconfig.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\bin\Debug\net10.0\Company-events.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\bin\Debug\net10.0\Company-events.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\Company-events.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\Company-events.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\Company-events.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\Company-events.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\Company-events.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\Company-events.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\refint\Company-events.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\Company-events.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\Company-events.genruntimeconfig.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab9\Company-events\obj\Debug\net10.0\ref\Company-events.dll

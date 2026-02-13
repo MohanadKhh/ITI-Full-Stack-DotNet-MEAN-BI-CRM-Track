@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{122F5E41-E5A4-4546-93D0-B64BFE3CA570}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{122F5E41-E5A4-4546-93D0-B64BFE3CA570}|Company-events\\Company-events.csproj|solutionrelative:company-events\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|solutionrelative:company-events\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\club.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|solutionrelative:company-events\\club.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|solutionrelative:company-events\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|solutionrelative:company-events\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\layoffcause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|solutionrelative:company-events\\layoffcause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\boardmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|solutionrelative:company-events\\boardmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\salesperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|solutionrelative:company-events\\salesperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab9\\company-events\\employeelayoffeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D28978-8A54-B7DC-A04F-D4C9A5105413}|Company-events\\Company-events.csproj|solutionrelative:company-events\\employeelayoffeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +42,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\Program.cs",
               "RelativeDocumentMoniker": "Company-events\\Program.cs",
               "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\Program.cs",
               "RelativeToolTip": "Company-events\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-09T18:41:38.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\Employee.cs",
+              "RelativeDocumentMoniker": "Company-events\\Employee.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\Employee.cs*",
+              "RelativeToolTip": "Company-events\\Employee.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswB8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:47:39.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeLayOffEventArgs.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\EmployeeLayOffEventArgs.cs",
+              "RelativeDocumentMoniker": "Company-events\\EmployeeLayOffEventArgs.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\EmployeeLayOffEventArgs.cs",
+              "RelativeToolTip": "Company-events\\EmployeeLayOffEventArgs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:52:42.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LayOffCause.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\LayOffCause.cs",
+              "RelativeDocumentMoniker": "Company-events\\LayOffCause.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\LayOffCause.cs",
+              "RelativeToolTip": "Company-events\\LayOffCause.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:09:43.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\Department.cs",
+              "RelativeDocumentMoniker": "Company-events\\Department.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\Department.cs*",
+              "RelativeToolTip": "Company-events\\Department.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:49:15.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Club.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\Club.cs",
+              "RelativeDocumentMoniker": "Company-events\\Club.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\Club.cs*",
+              "RelativeToolTip": "Company-events\\Club.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAMwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:49:42.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalesPerson.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\SalesPerson.cs",
+              "RelativeDocumentMoniker": "Company-events\\SalesPerson.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\SalesPerson.cs",
+              "RelativeToolTip": "Company-events\\SalesPerson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:51:35.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BoardMember.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\BoardMember.cs",
+              "RelativeDocumentMoniker": "Company-events\\BoardMember.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab9\\Company-events\\BoardMember.cs",
+              "RelativeToolTip": "Company-events\\BoardMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T14:52:01.86Z",
               "EditorCaption": ""
             }
           ]
