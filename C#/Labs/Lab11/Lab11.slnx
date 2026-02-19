@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ITI.BusinessLayer/ITI.BusinessLayer.csproj" />
+  <Project Path="ITI.DataAccessLayer/ITI.DataAccessLayer.csproj" />
+  <Project Path="ITI.PeresentationLayer/ITI.PeresentationLayer.csproj" />
+</Solution>

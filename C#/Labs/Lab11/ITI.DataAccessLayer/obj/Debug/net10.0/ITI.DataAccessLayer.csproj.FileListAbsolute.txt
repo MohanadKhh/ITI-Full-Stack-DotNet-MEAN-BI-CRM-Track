@@ -1,0 +1,14 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\bin\Debug\net10.0\ITI.DataAccessLayer.dll.config
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\bin\Debug\net10.0\ITI.DataAccessLayer.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\bin\Debug\net10.0\ITI.DataAccessLayer.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\bin\Debug\net10.0\ITI.DataAccessLayer.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ITI.DataAccessLayer.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ITI.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ITI.DataAccessLayer.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ITI.DataAccessLayer.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ITI.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ITI.DataAccessLayer.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ITI.DataAccessLayer.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\refint\ITI.DataAccessLayer.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ITI.DataAccessLayer.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.DataAccessLayer\obj\Debug\net10.0\ref\ITI.DataAccessLayer.dll

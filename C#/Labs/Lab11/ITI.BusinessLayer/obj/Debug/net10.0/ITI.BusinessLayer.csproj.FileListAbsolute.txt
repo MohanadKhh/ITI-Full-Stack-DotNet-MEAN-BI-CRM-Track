@@ -1,0 +1,17 @@
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\bin\Debug\net10.0\ITI.BusinessLayer.deps.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\bin\Debug\net10.0\ITI.BusinessLayer.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\bin\Debug\net10.0\ITI.BusinessLayer.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\bin\Debug\net10.0\ITI.DataAccessLayer.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\bin\Debug\net10.0\ITI.DataAccessLayer.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\bin\Debug\net10.0\ITI.DataAccessLayer.dll.config
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.BusinessLayer.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.BusinessLayer.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.BusinessLayer.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.BusinessLayer.sourcelink.json
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.Busi.849A0709.Up2Date
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.BusinessLayer.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\refint\ITI.BusinessLayer.dll
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ITI.BusinessLayer.pdb
+D:\Mohanad.Khh\ITI\C#\Labs\Lab11\ITI.BusinessLayer\obj\Debug\net10.0\ref\ITI.BusinessLayer.dll

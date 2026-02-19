@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A0FB2254-26B8-FA7B-8089-B8DE5925DE1A}|ITI.DataAccessLayer\\ITI.DataAccessLayer.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab11\\iti.dataaccesslayer\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0FB2254-26B8-FA7B-8089-B8DE5925DE1A}|ITI.DataAccessLayer\\ITI.DataAccessLayer.csproj|solutionrelative:iti.dataaccesslayer\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC25B19C-6A33-258F-27B9-D1697AA78EB6}|ITI.BusinessLayer\\ITI.BusinessLayer.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab11\\iti.businesslayer\\instructorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC25B19C-6A33-258F-27B9-D1697AA78EB6}|ITI.BusinessLayer\\ITI.BusinessLayer.csproj|solutionrelative:iti.businesslayer\\instructorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03BED4E5-77AE-6E94-D134-2D6258559288}|ITI.PeresentationLayer\\ITI.PeresentationLayer.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab11\\iti.peresentationlayer\\frminsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BED4E5-77AE-6E94-D134-2D6258559288}|ITI.PeresentationLayer\\ITI.PeresentationLayer.csproj|solutionrelative:iti.peresentationlayer\\frminsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03BED4E5-77AE-6E94-D134-2D6258559288}|ITI.PeresentationLayer\\ITI.PeresentationLayer.csproj|d:\\mohanad.khh\\iti\\c#\\labs\\lab11\\iti.peresentationlayer\\frminsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03BED4E5-77AE-6E94-D134-2D6258559288}|ITI.PeresentationLayer\\ITI.PeresentationLayer.csproj|solutionrelative:iti.peresentationlayer\\frminsupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\ITI.DataAccessLayer\\DBManager.cs",
+              "RelativeDocumentMoniker": "ITI.DataAccessLayer\\DBManager.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\ITI.DataAccessLayer\\DBManager.cs*",
+              "RelativeToolTip": "ITI.DataAccessLayer\\DBManager.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T12:57:45.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InstructorBL.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\ITI.BusinessLayer\\InstructorBL.cs",
+              "RelativeDocumentMoniker": "ITI.BusinessLayer\\InstructorBL.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\ITI.BusinessLayer\\InstructorBL.cs*",
+              "RelativeToolTip": "ITI.BusinessLayer\\InstructorBL.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T12:51:20.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmInsUpdate.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\ITI.PeresentationLayer\\FrmInsUpdate.cs",
+              "RelativeDocumentMoniker": "ITI.PeresentationLayer\\FrmInsUpdate.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\ITI.PeresentationLayer\\FrmInsUpdate.cs",
+              "RelativeToolTip": "ITI.PeresentationLayer\\FrmInsUpdate.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T12:47:34.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmInsUpdate.cs [Design]",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\ITI.PeresentationLayer\\FrmInsUpdate.cs",
+              "RelativeDocumentMoniker": "ITI.PeresentationLayer\\FrmInsUpdate.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\C#\\Labs\\Lab11\\ITI.PeresentationLayer\\FrmInsUpdate.cs [Design]",
+              "RelativeToolTip": "ITI.PeresentationLayer\\FrmInsUpdate.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T12:47:31.859Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Task2_ADO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fed6bc79d238f05a880f3963fb29e7a44cb1ed3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c3079d48343e3ed7df04f53c98b0e2771a39b50")]
 [assembly: System.Reflection.AssemblyProductAttribute("Task2_ADO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Task2_ADO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
