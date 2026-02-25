@@ -1,0 +1,49 @@
+﻿@model ProductCreateVM
+
+<form action="~/Product/Create" method="post">
+    @Html.AntiForgeryToken()
+    <div class="row py-1">
+        <div class="col">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" type="text" class="form-control" placeholder="Product Name">
+        </div>
+        <div class="col">
+            <label asp-for="CategoryId" class="form-label"></label>
+            <select asp-for="CategoryId" class="form-select" required>
+                @foreach (var category in Model.Categories!)
+                {
+                    <option value="@category.Value">@category.Text</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="row py-1">
+        <div class="col">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+    </div>
+
+    <div class="row py-1">
+        <div class="col">
+            <label asp-for="Price" class="form-label"></label>
+            <input asp-for="Price" type="number" class="form-control" placeholder="Product Price">
+        </div>
+        <div class="col">
+            <label asp-for="Count" class="form-label"></label>
+            <input asp-for="Count" type="number" class="form-control" placeholder="Product Count">
+        </div>
+    </div>
+
+    <div class="d-flex gap-2 mt-4">
+        <button type="submit" class="btn btn-success px-4">
+            Create Product
+        </button>
+
+        <a asp-action="Index" class="btn btn-outline-secondary px-4">
+            Cancel
+        </a>
+    </div>
+
+</form>

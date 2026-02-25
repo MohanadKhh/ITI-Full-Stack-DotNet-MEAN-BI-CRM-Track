@@ -1,0 +1,16 @@
+﻿@model ProductReadVM
+
+<div class="card" style="width: 24rem;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text">@Model.Description</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><B>Price:</B> @Model.Price</li>
+        <li class="list-group-item"><B>Count:</B> @Model.Count</li>
+        <li class="list-group-item"><B>Category:</B> @Model.CategoryId</li>
+    </ul>
+    <div class="card-body">
+        <a href="~/Product/Index" class="btn btn-outline-primary">Back</a>
+    </div>
+</div>

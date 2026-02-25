@@ -1,0 +1,36 @@
+﻿<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Count</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int i = 0;
+        }
+
+        @foreach (var product in Model)
+        {
+            <tr>
+                <th scope="row">@i</th>
+                <td>@product.Id</td>
+                <td>@product.Title</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>@product.Count</td>
+                <td>
+                    <a class="btn btn-info" href="GetById/@product.Id">
+                        Details
+                    </a>
+                </td>
+            </tr>
+            i++;
+        }
+    </tbody>
+</table>
