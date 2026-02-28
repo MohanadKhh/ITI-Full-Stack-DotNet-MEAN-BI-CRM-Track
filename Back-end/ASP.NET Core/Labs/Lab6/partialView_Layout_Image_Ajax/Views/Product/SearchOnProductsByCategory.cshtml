@@ -1,0 +1,68 @@
+﻿@model CategorySearchVM
+
+<div class="m-5">
+    <label asp-for="Id" class="form-label">Categories</label>
+    <select id="categoryDropDown" asp-for="Id" asp-items="Model.Categories" class="form-select" required></select>
+</div>
+
+
+<div id="productsDropdown">
+</div>
+
+<div class="card-body">
+    <a href="~/Product/Index" class="btn btn-outline-primary">Back</a>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function(){
+            $("#categoryDropDown").change(function(){
+                var categoryId = $(this).val();
+
+                if(categoryId != null)
+                {
+                    $.ajax({
+                        url: '/Product/GetProductsByCategory',
+                        type: "GET",
+                        data: {categoryId: categoryId},
+                        success:function(result)
+                        {
+                            $("#productsDropdown").html(result);
+                        },
+                        error: function()
+                        {
+                            alert("An error occur while fetching product !!");
+                            $("#productsDropdown").html("");
+                        }
+                    })
+                }
+                else
+                    $("#productsDropdown").html("");
+            });
+
+            $(document).on("change", "#productsDropDown", function(){
+            var productId = $(this).val();
+
+            if(productId != null)
+            {
+                $.ajax({
+                    url: '/Product/GetProduct',
+                    type: "GET",
+                    data: {id: productId},
+                    success:function(result)
+                    {
+                        $("#productTbl").html(result);
+                    },
+                    error: function()
+                    {
+                        alert("An error occur while fetching product !!");
+                        $("#productTbl").html("");
+                    }
+                })
+            }
+            else
+                $("#productTbl").html("");
+            });
+        });
+    </script>
+}

@@ -1,0 +1,40 @@
+﻿@model ProductsDropdownVM
+
+<div class="m-5">
+    <label asp-for="Id" class="form-label">Products</label>
+    <select id="productsDropDown" asp-for="Id" asp-items="Model.Products" class="form-select" required></select>
+</div>
+
+
+<div id="productTbl">
+</div>
+
+@* @section Scripts {
+    <script>
+        $(document).ready(function(){
+            $("#productsDropDown").change(function(){
+                var productId = $(this).val();
+
+                if(productId != null)
+                {
+                    $.ajax({
+                        url: '/Product/GetProduct',
+                        type: "GET",
+                        data: {id: productId},
+                        success:function(result)
+                        {
+                            $("#productTbl").html(result);
+                        },
+                        error: function()
+                        {
+                            alert("An error occur while fetching product !!");
+                            $("#productTbl").html(result);
+                        }
+                    })
+                }
+                else
+                    $("#productTbl").html(result);
+            });
+        });
+    </script>
+} *@

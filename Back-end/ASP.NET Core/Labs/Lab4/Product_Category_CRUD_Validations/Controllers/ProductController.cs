@@ -54,6 +54,7 @@ namespace Product_Category_CRUD.Controllers
         {
             var productCreateVM = new ProductCreateVM
             {
+                ExpiryDate = DateOnly.FromDateTime(DateTime.Today.AddYears(2)),
                 Categories = GetDropDownItemsOfCatrgories()
             };
             return View(productCreateVM);
@@ -100,6 +101,7 @@ namespace Product_Category_CRUD.Controllers
                 Description = product.Description,
                 Price = product.Price,
                 Count = product.Count,
+                ExpiryDate = product.ExpiryDate ?? new DateOnly(1,1,1),
                 CategoryId = product.CategoryId,
                 CategoryName = product.Category.Name,
                 Categories = GetDropDownItemsOfCatrgories()
@@ -127,6 +129,7 @@ namespace Product_Category_CRUD.Controllers
             productUpdated.Description = productCreateVM.Description;
             productUpdated.Price = productCreateVM.Price;
             productUpdated.Count = productCreateVM.Count;
+            productUpdated.ExpiryDate = (DateOnly?)productCreateVM.ExpiryDate;
             productUpdated.CategoryId = productCreateVM.CategoryId;
             Db.SaveChanges();
 

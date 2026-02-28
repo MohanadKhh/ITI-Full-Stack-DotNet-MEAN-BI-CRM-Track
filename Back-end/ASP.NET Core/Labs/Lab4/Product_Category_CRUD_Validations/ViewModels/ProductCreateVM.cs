@@ -23,6 +23,7 @@ namespace Product_Category_CRUD_Validations.ViewModels
         public decimal Price { get; set; }
 
         [Required]
+        [Range(0,1_000)]
         public int Count { get; set; }
 
         [DataType (DataType.Date)]
