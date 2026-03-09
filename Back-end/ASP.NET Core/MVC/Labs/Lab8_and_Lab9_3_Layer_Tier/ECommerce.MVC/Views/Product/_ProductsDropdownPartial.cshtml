@@ -1,0 +1,12 @@
+﻿@model ProductsDropdownVM
+
+<div class="m-5">
+    <label asp-for="Id" class="form-label">Products</label>
+    <select id="productsDropDown" asp-for="Id" asp-items="@(new SelectList(Model.Products, "Id", "Name"))" class="form-select" required>
+        <option disabled selected value="">-- Select Product --</option>
+    </select>
+</div>
+
+
+<div id="productTbl">
+</div>

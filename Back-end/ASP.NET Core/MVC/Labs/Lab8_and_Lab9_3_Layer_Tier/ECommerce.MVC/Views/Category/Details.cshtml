@@ -1,0 +1,21 @@
+﻿@model CategoryVM
+
+<div class="card" style="width: 24rem;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text"><b>Product Count:</b> @Model.ProductCounts</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        @{
+            int i = 1;
+        }
+        @foreach (var product in Model.products!)
+        {
+            <li class="list-group-item">product (@i): @product.Name</li>
+            i++;
+        }
+    </ul>
+    <div class="card-body">
+        <a href="~/Category/Index" class="btn btn-outline-primary">Back</a>
+    </div>
+</div>
