@@ -1,0 +1,60 @@
+﻿@page "/todos"
+
+<PageTitle>Todos</PageTitle>
+
+<h1 class="alert text-center bg-warning-subtle fw-bold rounded-5 mx-5">
+    Todo List
+</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Is Done ?</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int id = 1;
+        }
+        @foreach (var item in toDoList.OrderBy(i => i.IsDone))
+        {
+            <tr class="@(item.IsDone ? "table-success" : "table-danger")">
+                <td>@item.Name</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="@id" autocomplete="off" @bind="item.IsDone">
+                        <label class="btn btn-outline-primary" for="@id">@(item.IsDone ? "Undo" : "Done")</label>
+                    </div>
+                </td>
+            </tr>
+            id++;
+        }
+    </tbody>
+</table>
+
+
+
+
+@code {
+    private List<ToDo> toDoList = new List<ToDo>();
+
+    protected override void OnInitialized()
+    {
+        toDoList.Add(new ToDo { Name = "C#", IsDone = false });
+        toDoList.Add(new ToDo { Name = "DB", IsDone = false });
+        toDoList.Add(new ToDo { Name = "EF", IsDone = false });
+        toDoList.Add(new ToDo { Name = "MVC", IsDone = false });
+        toDoList.Add(new ToDo { Name = "API", IsDone = false });
+        toDoList.Add(new ToDo { Name = "Blazor", IsDone = false });
+        base.OnInitialized();
+    }
+
+    private void ToggleDone(ToDo item)
+    {
+        if (item.IsDone)
+            item.IsDone = false;
+        else
+            item.IsDone = true;
+    }
+}
