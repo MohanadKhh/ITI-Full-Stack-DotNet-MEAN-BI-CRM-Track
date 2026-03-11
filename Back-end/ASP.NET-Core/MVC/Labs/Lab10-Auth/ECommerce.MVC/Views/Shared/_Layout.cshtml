@@ -33,13 +33,27 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">Categories</a>
                         </li>
                     </ul>
-                    <ul>
-                        <li class="nav-item btn btn-info">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
-                        </li>
-                        <li class="nav-item btn btn-outline-primary">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">LogIn</a>
-                        </li>
+                    <ul class ="navbar-nav d-flex gap-2 align-items-center">
+                        @if (User.Identity.IsAuthenticated == false)
+                        {
+                            <li class="nav-item">
+                                <a class="btn btn-info" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary" asp-area="" asp-controller="Account" asp-action="Login">LogIn</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">
+                                    Welcome <b>@User.Identity.Name</b>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary" asp-area="" asp-controller="Account" asp-action="Logout">LogOut</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

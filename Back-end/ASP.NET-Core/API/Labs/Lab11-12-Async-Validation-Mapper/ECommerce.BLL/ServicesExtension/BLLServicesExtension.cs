@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace ECommerce.BLL
 {
@@ -8,6 +9,7 @@ namespace ECommerce.BLL
         {
             services.AddScoped<IProductManager, ProductManager>();
             services.AddScoped<ICategoryManager, CategoryManager>();
+            services.AddValidatorsFromAssembly(typeof(BLLServicesExtension).Assembly);
         }
     }
 }

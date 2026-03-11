@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace ECommerce.DAL
+﻿namespace ECommerce.DAL
 {
     public interface ICategoryRepository : IGenericRepository<Category>
     {

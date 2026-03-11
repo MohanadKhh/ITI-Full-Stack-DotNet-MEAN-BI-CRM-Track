@@ -1,7 +1,6 @@
 using ECommerce.BLL;
 using ECommerce.DAL;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce.MVC
 {
@@ -19,6 +18,13 @@ namespace ECommerce.MVC
 
             // Add services of BLL Layer.
             builder.Services.AddBllServices();
+
+            // Configuration redirect of unauthenticated and unauthorized
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Account/Login";      // redirected here if not authenticated
+                options.AccessDeniedPath = "/Account/AccessDenied"; // redirected here if wrong role
+            });
 
             var app = builder.Build();
 
@@ -38,10 +44,12 @@ namespace ECommerce.MVC
             string adminEmail = "admin@mail.com";
             string adminPassword = "Admin@2002";
 
-            if(await userManager.FindByEmailAsync(adminEmail) == null)
+            if (await userManager.FindByEmailAsync(adminEmail) == null)
             {
                 var admin = new ApplicationUser
                 {
+                    FirstName = "Honda",
+                    LastName = "Al Admin",
                     UserName = adminEmail,
                     Email = adminEmail,
                 };

@@ -1,8 +1,10 @@
 ﻿using ECommerce.BLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.MVC
 {
+    [Authorize]
     public class CategoryController : Controller
     {
         private readonly ICategoryManager _categoryManager;
@@ -10,6 +12,8 @@ namespace ECommerce.MVC
         {
             _categoryManager = categoryManager;
         }
+
+        [Authorize(Roles = "Admin,User")]
         public ActionResult Index()
         {
             var categoriesVM = _categoryManager.GetAllCategories();
@@ -17,6 +21,7 @@ namespace ECommerce.MVC
         }
 
         // GET: CategoryController/Details/5
+        [Authorize(Roles = "Admin,User")]
         public ActionResult Details(int id)
         {
             var categoryVM = _categoryManager.GetCategory(id);
@@ -26,6 +31,7 @@ namespace ECommerce.MVC
         }
 
         // GET: CategoryController/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
@@ -34,6 +40,7 @@ namespace ECommerce.MVC
         // POST: CategoryController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult Create(CategoryVM categoryVM)
         {
             if (!ModelState.IsValid)
@@ -45,6 +52,7 @@ namespace ECommerce.MVC
         }
 
         // GET: CategoryController/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int id)
         {
             var categoryVM = _categoryManager.GetCategoryVMById(id);
@@ -56,6 +64,7 @@ namespace ECommerce.MVC
         // POST: CategoryController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(CategoryVM category)
         {
             _categoryManager.EditCategory(category);
@@ -63,6 +72,7 @@ namespace ECommerce.MVC
         }
 
         // GET: CategoryController/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int id)
         {
             _categoryManager.DeleteCategory(id);

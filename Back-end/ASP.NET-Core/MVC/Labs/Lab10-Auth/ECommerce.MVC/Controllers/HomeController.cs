@@ -1,6 +1,6 @@
+using ECommerce.DAL;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using ECommerce.DAL;
 
 namespace ECommerce.MVC
 {

@@ -26,7 +26,7 @@
         public void Delete(int id)
         {
             var entity = GetById(id);
-            if(entity == null)
+            if (entity == null)
                 return;
             _context.Set<T>().Remove(entity);
         }

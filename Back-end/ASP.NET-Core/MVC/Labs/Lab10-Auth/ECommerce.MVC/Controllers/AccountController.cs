@@ -57,6 +57,7 @@ namespace ECommerce.MVC
                 return View(registerVM);
             }
 
+            await _userManager.AddToRoleAsync(applicationUser, "User");
             return RedirectToAction("Login", "Account");
         }
 
@@ -89,7 +90,7 @@ namespace ECommerce.MVC
                 lockoutOnFailure: true
                 );
 
-            if(result.Succeeded)
+            if (result.Succeeded)
                 return RedirectToAction("Index", "Product");
 
             if (result.IsLockedOut)
@@ -97,6 +98,19 @@ namespace ECommerce.MVC
 
             ModelState.AddModelError("", "Invalid Email or Password");
             return View(loginVM);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Login", "Account");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> AccessDenied()
+        {
+            return View();
         }
     }
 }

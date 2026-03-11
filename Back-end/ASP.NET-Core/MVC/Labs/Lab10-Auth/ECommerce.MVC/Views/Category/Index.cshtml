@@ -26,18 +26,21 @@
                        asp-route-id="@category.Id">
                         Details
                     </a>
-                    <a class="btn btn-warning"
-                       asp-action="Edit"
-                       asp-route-id="@category.Id">
-                        Edit
-                    </a>
-                    <button type="button" class="btn btn-danger"
-                            data-bs-toggle="modal"
-                            data-bs-target="#delModal"
-                            data-categoryid="@category.Id"
-                            data-categoryname="@category.Name">
-                        Delete
-                    </button>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-warning"
+                           asp-action="Edit"
+                           asp-route-id="@category.Id">
+                            Edit
+                        </a>
+                        <button type="button" class="btn btn-danger"
+                                data-bs-toggle="modal"
+                                data-bs-target="#delModal"
+                                data-categoryid="@category.Id"
+                                data-categoryname="@category.Name">
+                            Delete
+                        </button>
+                    }
                 </td>
             </tr>
             i++;

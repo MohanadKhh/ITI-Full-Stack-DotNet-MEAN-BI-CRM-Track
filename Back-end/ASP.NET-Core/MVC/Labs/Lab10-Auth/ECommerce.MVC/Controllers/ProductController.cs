@@ -1,8 +1,10 @@
 ﻿using ECommerce.BLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.MVC
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly IProductManager _productManager;
@@ -12,6 +14,7 @@ namespace ECommerce.MVC
         }
 
         // GET: ProductController
+        [Authorize(Roles = "Admin,User")]
         public IActionResult Index()
         {
             var products = _productManager.GetAllProducts();
@@ -19,6 +22,7 @@ namespace ECommerce.MVC
         }
 
         // GET: ProductController/Details/5
+        [Authorize(Roles = "Admin,User")]
         public IActionResult Details(int id)
         {
             var product = _productManager.GetProduct(id);
@@ -29,6 +33,7 @@ namespace ECommerce.MVC
         }
 
         // GET: ProductController/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             var productCreateVM = _productManager.GetProductCreateView();
@@ -38,6 +43,7 @@ namespace ECommerce.MVC
         // POST: ProductController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create(ProductCreateVM productCreateVM, IFormFile imageFile)
         {
             if (!ModelState.IsValid)
@@ -53,6 +59,7 @@ namespace ECommerce.MVC
         }
 
         // GET: ProductController/Edit/5
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
             var productEditVM = _productManager.GetProductEditVMById(id);
@@ -65,6 +72,7 @@ namespace ECommerce.MVC
         // POST: ProductController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(ProductEditVM productEditVM, IFormFile? imageFile)
         {
             if (!ModelState.IsValid)
@@ -86,12 +94,14 @@ namespace ECommerce.MVC
         }
 
         // GET: ProductController/Delete/5
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             _productManager.DeleteProduct(id);
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin,User")]
         public IActionResult SearchOnProductsByCategory()
         {
             var categorySearch = new CategorySearchVM
@@ -101,12 +111,14 @@ namespace ECommerce.MVC
             return View(categorySearch);
         }
 
+        [Authorize(Roles = "Admin,User")]
         public IActionResult GetProductsByCategory(int categoryId)
         {
             var productsDropDown = _productManager.GetProductDropDownVM(categoryId);
             return PartialView("_ProductsDropdownPartial", productsDropDown);
         }
 
+        [Authorize(Roles = "Admin,User")]
         public IActionResult GetProductFromDropDown(int id)
         {
             var product = _productManager.GetProduct(id);
@@ -139,23 +151,5 @@ namespace ECommerce.MVC
 
             return uniqueFileName;
         }
-
-        //[AcceptVerbs("GET", "POST")]
-        //public IActionResult IsNameUniqueness(string name, int id)
-        //{
-        //    var isNameExist = Db.Products.Any(p => p.Name == name && p.Id != id);
-        //    if (isNameExist)
-        //        return Json($"Name {name} is already exists");
-        //    return Json(true);
-        //}
-
-        //List<SelectListItem> GetDropDownItemsOfCatrgories()
-        //{
-        //    return Db.Categories.Select(c => new SelectListItem
-        //    {
-        //        Value = c.Id.ToString(),
-        //        Text = c.Name,
-        //    }).ToList();
-        //}
     }
 }

@@ -16,14 +16,14 @@ namespace ECommerce.BLL
         public string Description { get; set; } = string.Empty;
 
         [Required]
-        [Range(1,1_000_000_000)]
+        [Range(1, 1_000_000_000)]
         public decimal Price { get; set; }
 
         [Required]
-        [Range(0,1_000)]
+        [Range(0, 1_000)]
         public int Count { get; set; }
 
-        [DataType (DataType.Date)]
+        [DataType(DataType.Date)]
         [FutureDate]
         public DateOnly ExpiryDate { get; set; }
 
