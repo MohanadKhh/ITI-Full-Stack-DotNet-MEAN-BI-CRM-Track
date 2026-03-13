@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D88050-E0AE-42E0-98ED-8A150E7DFDC8}|ITIApp.UI\\ITIApp.UI.csproj|d:\\mohanad.khh\\iti\\back-end\\linq-and-efcore\\project\\iti-db-management\\itiapp.ui\\instructorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D88050-E0AE-42E0-98ED-8A150E7DFDC8}|ITIApp.UI\\ITIApp.UI.csproj|solutionrelative:itiapp.ui\\instructorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D88050-E0AE-42E0-98ED-8A150E7DFDC8}|ITIApp.UI\\ITIApp.UI.csproj|d:\\mohanad.khh\\iti\\back-end\\linq-and-efcore\\project\\iti-db-management\\itiapp.ui\\courseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D88050-E0AE-42E0-98ED-8A150E7DFDC8}|ITIApp.UI\\ITIApp.UI.csproj|solutionrelative:itiapp.ui\\courseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D88050-E0AE-42E0-98ED-8A150E7DFDC8}|ITIApp.UI\\ITIApp.UI.csproj|d:\\mohanad.khh\\iti\\back-end\\linq-and-efcore\\project\\iti-db-management\\itiapp.ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0D88050-E0AE-42E0-98ED-8A150E7DFDC8}|ITIApp.UI\\ITIApp.UI.csproj|solutionrelative:itiapp.ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D88050-E0AE-42E0-98ED-8A150E7DFDC8}|ITIApp.UI\\ITIApp.UI.csproj|d:\\mohanad.khh\\iti\\back-end\\linq-and-efcore\\project\\iti-db-management\\itiapp.ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D88050-E0AE-42E0-98ED-8A150E7DFDC8}|ITIApp.UI\\ITIApp.UI.csproj|solutionrelative:itiapp.ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InstructorForm.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\ITIApp.UI\\InstructorForm.cs",
+              "RelativeDocumentMoniker": "ITIApp.UI\\InstructorForm.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\ITIApp.UI\\InstructorForm.cs",
+              "RelativeToolTip": "ITIApp.UI\\InstructorForm.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T12:59:43.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseForm.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\ITIApp.UI\\CourseForm.cs",
+              "RelativeDocumentMoniker": "ITIApp.UI\\CourseForm.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\ITIApp.UI\\CourseForm.cs",
+              "RelativeToolTip": "ITIApp.UI\\CourseForm.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T12:57:24.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\ITIApp.UI\\MainForm.cs",
+              "RelativeDocumentMoniker": "ITIApp.UI\\MainForm.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\ITIApp.UI\\MainForm.cs",
+              "RelativeToolTip": "ITIApp.UI\\MainForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADgvxYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T12:43:45.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\ITIApp.UI\\MainForm.cs",
+              "RelativeDocumentMoniker": "ITIApp.UI\\MainForm.cs",
+              "ToolTip": "D:\\Mohanad.Khh\\ITI\\Back-end\\LINQ-and-EFCore\\Project\\ITI-DB-Management\\ITIApp.UI\\MainForm.cs [Design]",
+              "RelativeToolTip": "ITIApp.UI\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T12:54:19.012Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

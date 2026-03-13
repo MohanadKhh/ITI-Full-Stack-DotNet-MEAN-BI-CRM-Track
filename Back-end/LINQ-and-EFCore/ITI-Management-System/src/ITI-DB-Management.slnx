@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ITIApp.BLL/ITIApp.BLL.csproj" />
+  <Project Path="ITIApp.DAL/ITIApp.DAL.csproj" />
+  <Project Path="ITIApp.UI/ITIApp.UI.csproj" />
+</Solution>

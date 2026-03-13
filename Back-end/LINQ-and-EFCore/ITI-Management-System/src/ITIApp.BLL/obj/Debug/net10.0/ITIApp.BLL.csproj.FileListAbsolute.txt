@@ -1,0 +1,16 @@
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\bin\Debug\net10.0\ITIApp.BLL.deps.json
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\bin\Debug\net10.0\ITIApp.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\bin\Debug\net10.0\ITIApp.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\bin\Debug\net10.0\ITIApp.DAL.dll
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\bin\Debug\net10.0\ITIApp.DAL.pdb
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.AssemblyInfoInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.AssemblyInfo.cs
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.sourcelink.json
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.csproj.Up2Date
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\refint\ITIApp.BLL.dll
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ITIApp.BLL.pdb
+D:\Mohanad.Khh\ITI\Back-end\LINQ-and-EFCore\Project\ITI-DB-Management\ITIApp.BLL\obj\Debug\net10.0\ref\ITIApp.BLL.dll
