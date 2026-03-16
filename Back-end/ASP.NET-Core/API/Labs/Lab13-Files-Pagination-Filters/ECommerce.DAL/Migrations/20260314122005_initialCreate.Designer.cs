@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerce.DAL.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20260310015940_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260314122005_initialCreate")]
+    partial class initialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -98,7 +98,7 @@ namespace ECommerce.DAL.Migrations
                     b.Property<DateOnly?>("ExpiryDate")
                         .HasColumnType("date");
 
-                    b.Property<string>("Image")
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")

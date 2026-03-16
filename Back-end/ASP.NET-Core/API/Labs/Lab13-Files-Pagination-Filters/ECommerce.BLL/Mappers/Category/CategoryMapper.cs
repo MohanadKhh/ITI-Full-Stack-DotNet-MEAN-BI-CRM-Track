@@ -1,4 +1,4 @@
-
+﻿
 
 using ECommerce.DAL;
 
@@ -10,7 +10,7 @@ namespace ECommerce.BLL
         {
             Id = category.Id,
             Name = category.Name,
-            ProductCounts = category.Products?.Count() ?? 0,
+            ProductCounts = category.Products!.Count(),
             products = category.Products?.Select(p => p.ToReadDTO()),
         };
     }

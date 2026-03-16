@@ -1,4 +1,4 @@
-using ECommerce.DAL;
+﻿using ECommerce.DAL;
 
 namespace ECommerce.BLL
 {
@@ -12,9 +12,9 @@ namespace ECommerce.BLL
             Price = product.Price,
             Count = product.Count,
             ExpiryDate = product.ExpiryDate ?? new DateOnly(1, 1, 1),
-            ImagePath = product.Image,
+            ImageUrl = product.ImageUrl,
             CategoryId = product.CategoryId,
-            CategoryName = product.Category?.Name ?? "N/A"
+            CategoryName = product.Category!.Name,
         };
 
 
@@ -24,6 +24,7 @@ namespace ECommerce.BLL
             Description = productWriteDTO.Description,
             Price = productWriteDTO.Price,
             Count = productWriteDTO.Count,
+            ImageUrl = productWriteDTO.ImageUrl,
             ExpiryDate = productWriteDTO.ExpiryDate,
             CategoryId = productWriteDTO.CategoryId
         };

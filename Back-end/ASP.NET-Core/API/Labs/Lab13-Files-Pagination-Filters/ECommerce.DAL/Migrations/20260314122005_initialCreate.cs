@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ECommerce.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class initialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -67,7 +67,7 @@ namespace ECommerce.DAL.Migrations
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "CategoryId", "Count", "Description", "ExpiryDate", "Image", "IsDeleted", "Name", "Price" },
+                columns: new[] { "Id", "CategoryId", "Count", "Description", "ExpiryDate", "ImageUrl", "IsDeleted", "Name", "Price" },
                 values: new object[,]
                 {
                     { 1, 1, 5, "Gaming laptop", new DateOnly(2028, 1, 1), null, false, "Laptop", 25000m },

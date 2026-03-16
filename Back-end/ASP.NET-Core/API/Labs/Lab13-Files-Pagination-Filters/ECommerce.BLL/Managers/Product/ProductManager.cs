@@ -1,4 +1,5 @@
 ﻿using ECommerce.Common;
+using ECommerce.Common.Pagination;
 using ECommerce.DAL;
 using FluentValidation;
 
@@ -22,6 +23,15 @@ namespace ECommerce.BLL
             var productsReadDto = products.Select(p => p.ToReadDTO());
 
             return GeneralResult<IEnumerable<ProductReadDto>>.SuccessedResult(productsReadDto);
+        }
+
+        public async Task<GeneralResult<PaginationResult<Product>>> GetAllProductsByPaginationAsync
+            (PaginationParameters paginationParameters,
+            ProductFilter productFilter)
+        {
+            var paginationResult = await _unitOfWork.ProductRepository.GetAllByPagination(paginationParameters, productFilter);
+
+            return GeneralResult<PaginationResult<Product>>.SuccessedResult(paginationResult);
         }
 
         public async Task<GeneralResult<ProductReadDto?>> GetProductAsync(int id)
