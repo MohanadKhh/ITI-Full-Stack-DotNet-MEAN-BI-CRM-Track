@@ -1,0 +1,169 @@
+@page "/questions/{QuestionId:int}/choices"
+
+@attribute [Authorize(Roles = "Admin")]
+
+@inject IUnitOfWork UnitOfWork
+@inject NavigationManager NavigationManager
+
+<PageTitle>Question Choices</PageTitle>
+
+<h3>Choices</h3>
+<p class="text-muted">Question: @(question?.Text ?? "-")</p>
+
+@if (!string.IsNullOrWhiteSpace(statusMessage))
+{
+    <div class="alert alert-info">@statusMessage</div>
+}
+
+<EditForm Model="choiceInput" OnValidSubmit="SaveChoiceAsync" class="mb-4">
+    <DataAnnotationsValidator />
+    <ValidationSummary class="text-danger" />
+    <div class="row g-2 align-items-center">
+        <div class="col-md-7">
+            <InputText @bind-Value="choiceInput.Text" class="form-control" placeholder="Choice text" />
+        </div>
+        <div class="col-md-3 form-check mt-2">
+            <InputCheckbox @bind-Value="choiceInput.IsCorrect" class="form-check-input" id="isCorrect" />
+            <label for="isCorrect" class="form-check-label">Correct</label>
+        </div>
+        <div class="col-md-2 d-grid">
+            <button type="submit" class="btn btn-primary">@(choiceInput.Id == 0 ? "Add" : "Save")</button>
+        </div>
+    </div>
+</EditForm>
+
+@if (!choices.Any())
+{
+    <p>No choices yet.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Text</th>
+                <th>Is Correct</th>
+                <th style="width: 220px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var choice in choices)
+            {
+                <tr>
+                    <td>@choice.Text</td>
+                    <td>@(choice.IsCorrect ? "Yes" : "No")</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary me-2" @onclick="() => EditChoice(choice)">Edit</button>
+                        <button class="btn btn-sm btn-outline-danger" @onclick="() => DeleteChoiceAsync(choice.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<button class="btn btn-link" @onclick="BackToQuestions">Back to Questions</button>
+
+@code {
+    [Parameter] public int QuestionId { get; set; }
+
+    private Question? question;
+    private List<Choice> choices = new();
+    private ChoiceInputModel choiceInput = new();
+    private string? statusMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAsync();
+    }
+
+    private async Task LoadAsync()
+    {
+        question = await UnitOfWork.Questions.GetByIdAsync(QuestionId);
+        var allChoices = await UnitOfWork.Choices.GetChoicesByQuestionAsync(QuestionId);
+        choices = allChoices.OrderByDescending(x => x.IsCorrect).ThenBy(x => x.Id).ToList();
+    }
+
+    private async Task SaveChoiceAsync()
+    {
+        if (choiceInput.Id == 0)
+        {
+            await UnitOfWork.Choices.AddAsync(new Choice
+            {
+                QuestionId = QuestionId,
+                Text = choiceInput.Text.Trim(),
+                IsCorrect = choiceInput.IsCorrect
+            });
+            statusMessage = "Choice created.";
+        }
+        else
+        {
+            var choice = await UnitOfWork.Choices.GetByIdAsync(choiceInput.Id);
+            if (choice is null)
+            {
+                statusMessage = "Choice not found.";
+                return;
+            }
+
+            choice.Text = choiceInput.Text.Trim();
+            choice.IsCorrect = choiceInput.IsCorrect;
+            UnitOfWork.Choices.Update(choice);
+            statusMessage = "Choice updated.";
+        }
+
+        try
+        {
+            await UnitOfWork.Choices.SaveChangesAsync();
+            choiceInput = new ChoiceInputModel();
+            await LoadAsync();
+        }
+        catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+        {
+            statusMessage = "Only one correct choice is allowed per question.";
+        }
+    }
+
+    private void EditChoice(Choice choice)
+    {
+        choiceInput = new ChoiceInputModel
+        {
+            Id = choice.Id,
+            Text = choice.Text,
+            IsCorrect = choice.IsCorrect
+        };
+    }
+
+    private async Task DeleteChoiceAsync(int id)
+    {
+        var choice = await UnitOfWork.Choices.GetByIdAsync(id);
+        if (choice is null)
+        {
+            statusMessage = "Choice not found.";
+            return;
+        }
+
+        UnitOfWork.Choices.Delete(choice);
+        await UnitOfWork.Choices.SaveChangesAsync();
+
+        if (choiceInput.Id == id)
+        {
+            choiceInput = new ChoiceInputModel();
+        }
+
+        statusMessage = "Choice deleted.";
+        await LoadAsync();
+    }
+
+    private void BackToQuestions() => NavigationManager.NavigateTo($"/exams/{question?.ExamId}/questions");
+
+    private sealed class ChoiceInputModel
+    {
+        public int Id { get; set; }
+
+        [System.ComponentModel.DataAnnotations.Required]
+        [System.ComponentModel.DataAnnotations.StringLength(1000, MinimumLength = 2)]
+        public string Text { get; set; } = string.Empty;
+
+        public bool IsCorrect { get; set; }
+    }
+}

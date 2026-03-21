@@ -1,0 +1,49 @@
+@page "/exams/attempts/{AttemptId:int}/result"
+
+@inject IUnitOfWork UnitOfWork
+@inject NavigationManager NavigationManager
+
+<PageTitle>Exam Result</PageTitle>
+
+@if (attempt is null)
+{
+    <p>Result not found.</p>
+}
+else
+{
+    <h3>Exam Result</h3>
+    <p><strong>Exam:</strong> @attempt.Exam.Title</p>
+    <p><strong>Score:</strong> @attempt.Score / @maxScore</p>
+    <p><strong>Finished:</strong> @attempt.FinishedAt?.ToLocalTime()</p>
+
+    <button class="btn btn-primary" @onclick="BackToSubjectExams">Back to Subject Exams</button>
+}
+
+@code {
+    [Parameter] public int AttemptId { get; set; }
+
+    private ExamAttempt? attempt;
+    private int maxScore;
+
+    protected override async Task OnInitializedAsync()
+    {
+        attempt = await UnitOfWork.ExamAttempts.GetAttemptWithAnswersAsync(AttemptId);
+
+        if (attempt is not null)
+        {
+            var questions = await UnitOfWork.Questions.GetQuestionsByExamAsync(attempt.ExamId);
+            maxScore = questions.Sum(x => x.Points);
+        }
+    }
+
+    private void BackToSubjectExams()
+    {
+        if (attempt is null)
+        {
+            NavigationManager.NavigateTo("/subjects");
+            return;
+        }
+
+        NavigationManager.NavigateTo($"/subjects/{attempt.Exam.SubjectId}/exams");
+    }
+}

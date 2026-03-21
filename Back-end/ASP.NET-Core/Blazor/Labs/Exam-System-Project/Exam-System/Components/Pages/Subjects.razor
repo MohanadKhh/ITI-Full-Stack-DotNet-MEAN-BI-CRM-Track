@@ -1,0 +1,175 @@
+﻿@page "/subjects"
+
+@inject IUnitOfWork UnitOfWork
+@inject NavigationManager NavigationManager
+
+<PageTitle>Subjects</PageTitle>
+
+<h3>Subjects</h3>
+
+@if (!string.IsNullOrWhiteSpace(statusMessage))
+{
+    <div class="alert alert-info">@statusMessage</div>
+}
+
+<AuthorizeView Roles="Admin">
+    <Authorized Context="authContext">
+        <EditForm Model="subjectInput" OnValidSubmit="SaveSubjectAsync" class="mb-4">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <InputText @bind-Value="subjectInput.Name" class="form-control" placeholder="Subject name" />
+                </div>
+                <div class="col-md-6">
+                    <InputText @bind-Value="subjectInput.Description" class="form-control" placeholder="Description" />
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button type="submit" class="btn btn-primary">@(subjectInput.Id == 0 ? "Add" : "Update")</button>
+                </div>
+            </div>
+        </EditForm>
+    </Authorized>
+</AuthorizeView>
+
+@if (!subjects.Any())
+{
+    @if (existFlag)
+    {
+        <p>Loading....</p>
+    }
+    else
+    {
+        <p>No subjects yet...</p>
+    }
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th style="width: 340px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subject in subjects)
+            {
+                <tr>
+                    <td>@subject.Name</td>
+                    <td>@subject.Description</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary me-2" @onclick="() => GoToSubjectExams(subject.Id)">
+                            Exams
+                        </button>
+
+                        <AuthorizeView Roles="Admin">
+                            <Authorized>
+                                <button class="btn btn-sm btn-outline-secondary me-2" @onclick="() => EditSubject(subject)">
+                                    Edit
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger" @onclick="() => DeleteSubjectAsync(subject.Id)">
+                                    Delete
+                                </button>
+                            </Authorized>
+                        </AuthorizeView>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Subject> subjects = new();
+    private SubjectInputModel subjectInput = new();
+    private string? statusMessage;
+    private bool existFlag = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadSubjectsAsync();
+    }
+
+    private async Task LoadSubjectsAsync()
+    {
+        var allSubjects = await UnitOfWork.Subjects.GetAllAsync();
+        subjects = allSubjects.OrderBy(x => x.Name).ToList();
+        existFlag = subjects.Any();
+    }
+
+    private async Task SaveSubjectAsync()
+    {
+        if (subjectInput.Id == 0)
+        {
+            await UnitOfWork.Subjects.AddAsync(new Subject
+            {
+                Name = subjectInput.Name.Trim(),
+                Description = string.IsNullOrWhiteSpace(subjectInput.Description) ? null : subjectInput.Description.Trim()
+            });
+
+            statusMessage = "Subject created.";
+        }
+        else
+        {
+            var existing = await UnitOfWork.Subjects.GetByIdAsync(subjectInput.Id);
+            if (existing is null)
+            {
+                statusMessage = "Subject not found.";
+                return;
+            }
+
+            existing.Name = subjectInput.Name.Trim();
+            existing.Description = string.IsNullOrWhiteSpace(subjectInput.Description) ? null : subjectInput.Description.Trim();
+            UnitOfWork.Subjects.Update(existing);
+            statusMessage = "Subject updated.";
+        }
+
+        await UnitOfWork.Subjects.SaveChangesAsync();
+        subjectInput = new();
+        await LoadSubjectsAsync();
+    }
+
+    private void EditSubject(Subject subject)
+    {
+        subjectInput = new SubjectInputModel
+        {
+            Id = subject.Id,
+            Name = subject.Name,
+            Description = subject.Description
+        };
+    }
+
+    private async Task DeleteSubjectAsync(int id)
+    {
+        var subject = await UnitOfWork.Subjects.GetByIdAsync(id);
+        if (subject is null)
+        {
+            statusMessage = "Subject not found.";
+            return;
+        }
+
+        UnitOfWork.Subjects.Delete(subject);
+        await UnitOfWork.Subjects.SaveChangesAsync();
+        statusMessage = "Subject deleted.";
+        await LoadSubjectsAsync();
+    }
+
+    private void GoToSubjectExams(int subjectId)
+    {
+        NavigationManager.NavigateTo($"/subjects/{subjectId}/exams");
+    }
+
+    private sealed class SubjectInputModel
+    {
+        public int Id { get; set; }
+
+        [System.ComponentModel.DataAnnotations.Required]
+        [System.ComponentModel.DataAnnotations.StringLength(100, MinimumLength = 2)]
+        public string Name { get; set; } = string.Empty;
+
+        [System.ComponentModel.DataAnnotations.StringLength(1000)]
+        public string? Description { get; set; }
+    }
+}

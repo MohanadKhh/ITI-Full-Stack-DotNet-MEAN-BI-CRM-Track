@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<ProductReadVM>
 
 <a class="btn btn-outline-info m-5 d-flex justify-content-center fw-bold"
-   asp-action="SearchOnProductsByCategory"
-   asp-controller="Product">
+       asp-action="SearchOnProductsByCategory"
+       asp-controller="Product">
     Search By Category
 </a>
 
@@ -35,15 +35,15 @@
                 </td>
                 <td>
                     <a class="btn btn-primary"
-                       asp-action="Details"
-                       asp-route-id="@product.Id">
+                           asp-action="Details"
+                           asp-route-id="@product.Id">
                         Details
                     </a>
                     @if (User.IsInRole("Admin"))
                     {
                         <a class="btn btn-warning"
-                           asp-action="Edit"
-                           asp-route-id="@product.Id">
+                               asp-action="Edit"
+                               asp-route-id="@product.Id">
                             Edit
                         </a>
                         <button type="button" class="btn btn-danger"
@@ -59,16 +59,18 @@
             i++;
         }
     </tbody>
-
-    <tfoot>
-        <tr>
-            <td colspan="7">
-                <a href="~/Product/Create" class="btn btn-success">
-                    Create Product
-                </a>
-            </td>
-        </tr>
-    </tfoot>
+    @if (User.IsInRole("Admin"))
+    {
+        <tfoot>
+            <tr>
+                <td colspan="7">
+                    <a href="~/Product/Create" class="btn btn-success">
+                        Create Product
+                    </a>
+                </td>
+            </tr>
+        </tfoot>
+    }
 </table>
 
 

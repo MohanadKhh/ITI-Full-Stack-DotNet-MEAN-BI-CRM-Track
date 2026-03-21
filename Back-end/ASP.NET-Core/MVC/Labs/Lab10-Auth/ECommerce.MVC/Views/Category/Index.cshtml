@@ -22,15 +22,15 @@
                 <td>@category.ProductCounts</td>
                 <td>
                     <a class="btn btn-primary"
-                       asp-action="Details"
-                       asp-route-id="@category.Id">
+                           asp-action="Details"
+                           asp-route-id="@category.Id">
                         Details
                     </a>
                     @if (User.IsInRole("Admin"))
                     {
                         <a class="btn btn-warning"
-                           asp-action="Edit"
-                           asp-route-id="@category.Id">
+                               asp-action="Edit"
+                               asp-route-id="@category.Id">
                             Edit
                         </a>
                         <button type="button" class="btn btn-danger"
@@ -46,16 +46,18 @@
             i++;
         }
     </tbody>
-
-    <tfoot>
-        <tr>
-            <td colspan="7">
-                <a href="~/Category/Create" class="btn btn-success">
-                    Create Category
-                </a>
-            </td>
-        </tr>
-    </tfoot>
+    @if (User.IsInRole("Admin"))
+    {
+        <tfoot>
+            <tr>
+                <td colspan="7">
+                    <a href="~/Category/Create" class="btn btn-success">
+                        Create Category
+                    </a>
+                </td>
+            </tr>
+        </tfoot>
+    }
 </table>
 
 

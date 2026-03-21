@@ -1,0 +1,180 @@
+@page "/subjects/{SubjectId:int}/exams"
+
+@inject IUnitOfWork UnitOfWork
+@inject NavigationManager NavigationManager
+
+<PageTitle>Subject Exams</PageTitle>
+
+<h3>@(subject?.Name ?? "Subject") Exams</h3>
+
+@if (!string.IsNullOrWhiteSpace(statusMessage))
+{
+    <div class="alert alert-info">@statusMessage</div>
+}
+
+<AuthorizeView Roles="Admin">
+    <Authorized Context="authContext">
+        <EditForm Model="examInput" OnValidSubmit="SaveExamAsync" class="mb-4">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+            <div class="row g-2">
+                <div class="col-md-5">
+                    <InputText @bind-Value="examInput.Title" class="form-control" placeholder="Exam title" />
+                </div>
+                <div class="col-md-3">
+                    <InputNumber @bind-Value="examInput.DurationInMinutes" class="form-control" placeholder="Duration (minutes)" />
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button type="submit" class="btn btn-primary">@(examInput.Id == 0 ? "Add" : "Update")</button>
+                </div>
+            </div>
+        </EditForm>
+    </Authorized>
+</AuthorizeView>
+
+@if (!exams.Any())
+{
+    <p>No exams found for this subject.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Duration</th>
+                <th>Questions</th>
+                <th style="width: 360px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var exam in exams)
+            {
+                <tr>
+                    <td>@exam.Title</td>
+                    <td>@exam.DurationInMinutes min</td>
+                    <td>@exam.Questions.Count</td>
+                    <td>
+                        <button class="btn btn-sm btn-success me-2" @onclick="() => StartExam(exam.Id)">Start</button>
+
+                        <AuthorizeView Roles="Admin">
+                            <Authorized>
+                                <button class="btn btn-sm btn-outline-secondary me-2" @onclick="() => EditExam(exam)">Edit</button>
+                                <button class="btn btn-sm btn-outline-dark me-2" @onclick="() => ManageQuestions(exam.Id)">Questions</button>
+                                <button class="btn btn-sm btn-outline-danger" @onclick="() => DeleteExamAsync(exam.Id)">Delete</button>
+                            </Authorized>
+                        </AuthorizeView>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<button class="btn btn-link" @onclick="BackToSubjects">Back to Subjects</button>
+
+@code {
+    [Parameter] public int SubjectId { get; set; }
+
+    private Subject? subject;
+    private List<Exam> exams = new();
+    private ExamInputModel examInput = new();
+    private string? statusMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAsync();
+    }
+
+    private async Task LoadAsync()
+    {
+        subject = await UnitOfWork.Subjects.GetByIdAsync(SubjectId);
+
+        var allExams = await UnitOfWork.Exams.GetExamsBySubjectAsync(SubjectId);
+        exams = allExams.OrderBy(x => x.Title).ToList();
+    }
+
+    private async Task SaveExamAsync()
+    {
+        if (subject is null)
+        {
+            statusMessage = "Subject not found.";
+            return;
+        }
+
+        if (examInput.Id == 0)
+        {
+            await UnitOfWork.Exams.AddAsync(new Exam
+            {
+                SubjectId = SubjectId,
+                Title = examInput.Title.Trim(),
+                DurationInMinutes = examInput.DurationInMinutes
+            });
+            statusMessage = "Exam created.";
+        }
+        else
+        {
+            var exam = await UnitOfWork.Exams.GetByIdAsync(examInput.Id);
+            if (exam is null)
+            {
+                statusMessage = "Exam not found.";
+                return;
+            }
+
+            exam.Title = examInput.Title.Trim();
+            exam.DurationInMinutes = examInput.DurationInMinutes;
+            UnitOfWork.Exams.Update(exam);
+            statusMessage = "Exam updated.";
+        }
+
+        await UnitOfWork.Exams.SaveChangesAsync();
+        examInput = new ExamInputModel { DurationInMinutes = 30 };
+        await LoadAsync();
+    }
+
+    private void EditExam(Exam exam)
+    {
+        examInput = new ExamInputModel
+        {
+            Id = exam.Id,
+            Title = exam.Title,
+            DurationInMinutes = exam.DurationInMinutes
+        };
+    }
+
+    private async Task DeleteExamAsync(int id)
+    {
+        var exam = await UnitOfWork.Exams.GetByIdAsync(id);
+        if (exam is null)
+        {
+            statusMessage = "Exam not found.";
+            return;
+        }
+
+        UnitOfWork.Exams.Delete(exam);
+        await UnitOfWork.Exams.SaveChangesAsync();
+
+        if (examInput.Id == id)
+        {
+            examInput = new ExamInputModel { DurationInMinutes = 30 };
+        }
+
+        statusMessage = "Exam deleted.";
+        await LoadAsync();
+    }
+
+    private void StartExam(int examId) => NavigationManager.NavigateTo($"/exams/{examId}/start");
+    private void ManageQuestions(int examId) => NavigationManager.NavigateTo($"/exams/{examId}/questions");
+    private void BackToSubjects() => NavigationManager.NavigateTo("/subjects");
+
+    private sealed class ExamInputModel
+    {
+        public int Id { get; set; }
+
+        [System.ComponentModel.DataAnnotations.Required]
+        public string Title { get; set; } = string.Empty;
+
+        [System.ComponentModel.DataAnnotations.Range(1, 480)]
+        public int DurationInMinutes { get; set; } = 30;
+    }
+}

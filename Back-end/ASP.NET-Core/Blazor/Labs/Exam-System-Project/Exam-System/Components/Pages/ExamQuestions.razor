@@ -1,0 +1,178 @@
+@page "/exams/{ExamId:int}/questions"
+
+@attribute [Authorize(Roles = "Admin")]
+
+@inject IUnitOfWork UnitOfWork
+@inject NavigationManager NavigationManager
+
+<PageTitle>Exam Questions</PageTitle>
+
+<h3>@(exam?.Title ?? "Exam") Questions</h3>
+
+@if (!string.IsNullOrWhiteSpace(statusMessage))
+{
+    <div class="alert alert-info">@statusMessage</div>
+}
+
+<EditForm Model="questionInput" OnValidSubmit="SaveQuestionAsync" class="mb-4">
+    <DataAnnotationsValidator />
+    <ValidationSummary class="text-danger" />
+    <div class="row g-2">
+        <div class="col-md-7">
+            <label class="form-label">Question Text</label>
+            <InputText @bind-Value="questionInput.Text" class="form-control" placeholder="Question text" />
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Question Points</label>
+            <InputNumber @bind-Value="questionInput.Points" class="form-control" placeholder="Points" />
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Question Order</label>
+            <InputNumber @bind-Value="questionInput.Order" class="form-control" placeholder="Order" />
+        </div>
+        <div class="col-md-1 d-grid">
+            <div></div>
+            <button type="submit" class="btn btn-primary">@(questionInput.Id == 0 ? "Add" : "Save")</button>
+        </div>
+    </div>
+</EditForm>
+
+@if (!questions.Any())
+{
+    <p>No questions yet.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Order</th>
+                <th>Question</th>
+                <th>Points</th>
+                <th style="width: 260px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var question in questions)
+            {
+                <tr>
+                    <td>@question.Order</td>
+                    <td>@question.Text</td>
+                    <td>@question.Points</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-dark me-2" @onclick="() => ManageChoices(question.Id)">Choices</button>
+                        <button class="btn btn-sm btn-outline-secondary me-2" @onclick="() => EditQuestion(question)">Edit</button>
+                        <button class="btn btn-sm btn-outline-danger" @onclick="() => DeleteQuestionAsync(question.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<button class="btn btn-link" @onclick="BackToExams">Back to Exams</button>
+
+@code {
+    [Parameter] public int ExamId { get; set; }
+
+    private Exam? exam;
+    private List<Question> questions = new();
+    private QuestionInputModel questionInput = new();
+    private string? statusMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAsync();
+    }
+
+    private async Task LoadAsync()
+    {
+        exam = await UnitOfWork.Exams.GetByIdAsync(ExamId);
+        var allQuestions = await UnitOfWork.Questions.GetQuestionsByExamAsync(ExamId);
+        questions = allQuestions.OrderBy(x => x.Order).ToList();
+    }
+
+    private async Task SaveQuestionAsync()
+    {
+        if (questionInput.Id == 0)
+        {
+            await UnitOfWork.Questions.AddAsync(new Question
+            {
+                ExamId = ExamId,
+                Text = questionInput.Text.Trim(),
+                Points = questionInput.Points,
+                Order = questionInput.Order
+            });
+            statusMessage = "Question created.";
+        }
+        else
+        {
+            var question = await UnitOfWork.Questions.GetByIdAsync(questionInput.Id);
+            if (question is null)
+            {
+                statusMessage = "Question not found.";
+                return;
+            }
+
+            question.Text = questionInput.Text.Trim();
+            question.Points = questionInput.Points;
+            question.Order = questionInput.Order;
+            UnitOfWork.Questions.Update(question);
+            statusMessage = "Question updated.";
+        }
+
+        await UnitOfWork.Questions.SaveChangesAsync();
+        questionInput = new QuestionInputModel();
+        await LoadAsync();
+    }
+
+    private void EditQuestion(Question question)
+    {
+        questionInput = new QuestionInputModel
+        {
+            Id = question.Id,
+            Text = question.Text,
+            Points = question.Points,
+            Order = question.Order
+        };
+    }
+
+    private async Task DeleteQuestionAsync(int id)
+    {
+        var question = await UnitOfWork.Questions.GetByIdAsync(id);
+        if (question is null)
+        {
+            statusMessage = "Question not found.";
+            return;
+        }
+
+        UnitOfWork.Questions.Delete(question);
+        await UnitOfWork.Questions.SaveChangesAsync();
+
+        if (questionInput.Id == id)
+        {
+            questionInput = new QuestionInputModel();
+        }
+
+        statusMessage = "Question deleted.";
+        await LoadAsync();
+    }
+
+    private void ManageChoices(int questionId) => NavigationManager.NavigateTo($"/questions/{questionId}/choices");
+    private void BackToExams() => NavigationManager.NavigateTo($"/subjects/{exam?.SubjectId}/exams");
+
+    private sealed class QuestionInputModel
+    {
+        public int Id { get; set; }
+
+        [System.ComponentModel.DataAnnotations.Required]
+        [System.ComponentModel.DataAnnotations.StringLength(2000, MinimumLength = 3)]
+        public string Text { get; set; } = string.Empty;
+
+        [System.ComponentModel.DataAnnotations.Range(1, 100)]
+        public int Points { get; set; } = 1;
+
+        [System.ComponentModel.DataAnnotations.Range(1, 1000)]
+        public int Order { get; set; } = 1;
+    }
+}

@@ -1,0 +1,125 @@
+@page "/exams/{ExamId:int}/start"
+
+@attribute [Authorize]
+
+@inject IUnitOfWork UnitOfWork
+@inject UserManager<ApplicationUser> UserManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+
+<PageTitle>Take Exam</PageTitle>
+
+@if (exam is null)
+{
+    <p>Loading exam...</p>
+}
+else
+{
+    <h3>@exam.Title</h3>
+    <p class="text-muted">Duration: @exam.DurationInMinutes minutes</p>
+
+    @if (!exam.Questions.Any() || exam.Questions.Any(q => !q.Choices.Any()))
+    {
+        <p>Exam not ready yet.</p>
+    }
+    else
+    {
+        @foreach (var question in exam.Questions.OrderBy(q => q.Order))
+        {
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>@question.Order. @question.Text</h5>
+                    <p class="text-muted">Points: @question.Points</p>
+
+                    @foreach (var choice in question.Choices)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="question_@question.Id"
+                                   checked="@(selectedChoiceIds.TryGetValue(question.Id, out var selected) && selected == choice.Id)"
+                                   @onchange="() => SelectChoice(question.Id, choice.Id)" />
+                            <label class="form-check-label">@choice.Text</label>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+        <div class="py-3">
+            <button type="button" class="btn btn-success" @onclick="SubmitExamAsync">Submit Exam</button>
+        </div>
+    }
+}
+
+@code {
+    [Parameter] public int ExamId { get; set; }
+
+    private Exam? exam;
+    private readonly Dictionary<int, int> selectedChoiceIds = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        exam = await UnitOfWork.Exams.GetExamWithQuestionsAsync(ExamId);
+    }
+
+    private void SelectChoice(int questionId, int choiceId)
+    {
+        selectedChoiceIds[questionId] = choiceId;
+    }
+
+    private async Task SubmitExamAsync()
+    {
+        if (exam is null)
+        {
+            return;
+        }
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = await UserManager.GetUserAsync(authState.User);
+
+        if (user is null)
+        {
+            NavigationManager.NavigateTo("/Account/Login");
+            return;
+        }
+
+        var attempt = new ExamAttempt
+        {
+            ExamId = exam.Id,
+            UserId = user.Id,
+            StartedAt = DateTime.UtcNow,
+            FinishedAt = DateTime.UtcNow,
+            Score = 0
+        };
+
+        await UnitOfWork.ExamAttempts.AddAsync(attempt);
+        await UnitOfWork.ExamAttempts.SaveChangesAsync();
+
+        var score = 0;
+
+        foreach (var question in exam.Questions)
+        {
+            selectedChoiceIds.TryGetValue(question.Id, out var selectedChoiceId);
+            var selectedId = selectedChoiceId == 0 ? (int?)null : selectedChoiceId;
+            var correctChoiceId = question.Choices.FirstOrDefault(c => c.IsCorrect)?.Id;
+
+            if (selectedId.HasValue && correctChoiceId.HasValue && selectedId.Value == correctChoiceId.Value)
+            {
+                score += question.Points;
+            }
+
+            await UnitOfWork.ExamAnswers.AddAsync(new ExamAnswer
+            {
+                ExamAttemptId = attempt.Id,
+                QuestionId = question.Id,
+                SelectedChoiceId = selectedId
+            });
+        }
+
+        attempt.Score = score;
+        UnitOfWork.ExamAttempts.Update(attempt);
+        await UnitOfWork.ExamAttempts.SaveChangesAsync();
+
+        NavigationManager.NavigateTo($"/exams/attempts/{attempt.Id}/result");
+    }
+}
