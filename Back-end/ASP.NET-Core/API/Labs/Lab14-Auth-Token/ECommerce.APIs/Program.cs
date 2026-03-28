@@ -1,0 +1,54 @@
+
+using ECommerce.BLL;
+using ECommerce.DAL;
+using Microsoft.Extensions.FileProviders;
+using Scalar.AspNetCore;
+
+namespace ECommerce.APIs
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+
+            builder.Services.AddControllers();
+            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+            builder.Services.AddOpenApi();
+
+            // Add services of DAL Layer.
+            builder.Services.AddDALServices(builder.Configuration);
+
+            // Add services of BLL Layer.
+            builder.Services.AddBllServices();
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (app.Environment.IsDevelopment())
+            {
+                app.MapOpenApi();
+                app.MapScalarApiReference();
+            }
+
+            //needed to access files from files folder using url as it doesn't in wwwroot folder
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "Files")),
+                RequestPath = "/Files"
+            });
+
+            app.UseHttpsRedirection();
+
+            app.UseAuthorization();
+
+
+            app.MapControllers();
+
+            app.Run();
+        }
+    }
+}
