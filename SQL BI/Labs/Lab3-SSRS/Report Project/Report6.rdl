@@ -9,7 +9,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>18.4.11626.88</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-04-10T15:27:38.4784792Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-04-10T15:05:48.9631772Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -17,34 +17,31 @@
     <DataSource Name="ITI_DataSource">
       <DataSourceReference>ITI_DataSource</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>967d78c2-2f0d-4832-84ff-394a641ee5d1</rd:DataSourceID>
+      <rd:DataSourceID>cb95b5eb-e650-47b6-a26d-aac7ca0e657d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>ITI_DataSource</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@StudId">
-            <Value>=Parameters!StudId.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandText>select s.[St_Fname] + ' ' + s.[St_Lname] as Fullname, c.[Crs_Name], sc.grade
-from [dbo].[Course] c, [dbo].[Stud_Course] sc, [dbo].[Student] s
-where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @StudId</CommandText>
+        <CommandText>GetCourses</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
-        <Field Name="Fullname">
-          <DataField>Fullname</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="Crs_Id">
+          <DataField>Crs_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Crs_Name">
           <DataField>Crs_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="grade">
-          <DataField>grade</DataField>
+        <Field Name="Crs_Duration">
+          <DataField>Crs_Duration</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Top_Id">
+          <DataField>Top_Id</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -61,7 +58,7 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Report (5)</Value>
+                    <Value>Report6</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -86,10 +83,13 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.68333in</Width>
+                  <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.65833in</Width>
+                  <Width>1.775in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -108,7 +108,7 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Fullname</Value>
+                                  <Value>Crs Id</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -118,6 +118,7 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                                 </TextRun>
                               </TextRuns>
                               <Style>
+                                <FontFamily />
                                 <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
@@ -188,7 +189,7 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>grade</Value>
+                                  <Value>Crs Duration</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -220,6 +221,47 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Top Id</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily />
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox5</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
@@ -227,14 +269,14 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Fullname">
+                        <Textbox Name="Crs_Id">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Fullname.Value</Value>
+                                  <Value>=Fields!Crs_Id.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Color>#333333</Color>
@@ -246,7 +288,7 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Fullname</rd:DefaultName>
+                          <rd:DefaultName>Crs_Id</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -303,14 +345,14 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="grade">
+                        <Textbox Name="Crs_Duration">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!grade.Value</Value>
+                                  <Value>=Fields!Crs_Duration.Value</Value>
                                   <Style>
                                     <FontFamily />
                                     <Color>#333333</Color>
@@ -322,7 +364,7 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>grade</rd:DefaultName>
+                          <rd:DefaultName>Crs_Duration</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -330,7 +372,44 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
                             <BottomBorder>
                               <Style>Solid</Style>
                             </BottomBorder>
-                            <BackgroundColor>=IIf(Fields!grade.Value&lt;50,"Brown",IIf(Fields!grade.Value&lt;60,"Gold",IIf(Fields!grade.Value&gt;=60,"SeaGreen","Transparent")))</BackgroundColor>
+                            <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Top_Id">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Top_Id.Value</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Top_Id</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -346,6 +425,7 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
+                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -374,7 +454,7 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
             <DataSetName>DataSet1</DataSetName>
             <Top>0.42in</Top>
             <Height>0.43in</Height>
-            <Width>4.34166in</Width>
+            <Width>4.775in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -392,28 +472,14 @@ where c.[Crs_Id] = sc.[Crs_Id] and s.[St_Id] = sc.[St_Id] and  s.[St_Id] = @Stud
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParameters>
-    <ReportParameter Name="StudId">
-      <DataType>String</DataType>
-      <Prompt>Stud Id</Prompt>
-      <Hidden>true</Hidden>
-    </ReportParameter>
-  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
-      <CellDefinitions>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>StudId</ParameterName>
-        </CellDefinition>
-      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>30ab29dc-a0c2-4cf0-b30b-a8e50052b88b</rd:ReportID>
+  <rd:ReportID>fb343262-1b34-445c-87d7-e1e3ad155cb9</rd:ReportID>
 </Report>

@@ -55,9 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="Report1.rdl" />
+    <Report Include="Report10.rdl" />
     <Report Include="Report2.rdl" />
     <Report Include="Report3_4.rdl" />
     <Report Include="Report5.rdl" />
+    <Report Include="Report6.rdl" />
+    <Report Include="Report7.rdl" />
+    <Report Include="Report8_9.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
