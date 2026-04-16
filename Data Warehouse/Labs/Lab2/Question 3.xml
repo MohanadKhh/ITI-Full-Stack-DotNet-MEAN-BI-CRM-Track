@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Book Sales DW">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- FACT -->
+        <mxCell id="fact" value="fact_book_sales&#xa;----------------&#xa;PK: SalesID&#xa;DK: OrderID&#xa;FK: CustomerSK&#xa;FK: BookSK&#xa;FK: DateSK&#xa;M: Price"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#d5c2ff;strokeColor=#6c5ce7;"
+          vertex="1" parent="1">
+          <mxGeometry x="450" y="250" width="260" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- DIM CUSTOMER -->
+        <mxCell id="customer" value="dim_customer&#xa;----------------&#xa;PK: CustomerSK&#xa;CustomerID&#xa;FirstName&#xa;LastName&#xa;ZipCode&#xa;City&#xa;State"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;"
+          vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="240" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- DIM BOOK -->
+        <mxCell id="book" value="dim_book&#xa;----------------&#xa;PK: BookSK&#xa;BookID&#xa;Title&#xa;ISBN&#xa;Year&#xa;Price(list)&#xa;CategoryID&#xa;CategoryDesc"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;"
+          vertex="1" parent="1">
+          <mxGeometry x="780" y="250" width="260" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- DIM DATE -->
+        <mxCell id="date" value="dim_date&#xa;----------------&#xa;PK: DateSK&#xa;FullDate&#xa;Day&#xa;Month&#xa;MonthName&#xa;Quarter&#xa;Year&#xa;DayOfWeek&#xa;IsWeekend"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+          vertex="1" parent="1">
+          <mxGeometry x="450" y="470" width="260" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- DIM AUTHOR -->
+        <mxCell id="author" value="dim_author&#xa;----------------&#xa;PK: AuthorSK&#xa;AuthorID&#xa;AuthorName"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+          vertex="1" parent="1">
+          <mxGeometry x="780" y="50" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- BRIDGE -->
+        <mxCell id="bridge" value="bridge_book_author&#xa;----------------&#xa;FK: BookSK&#xa;FK: AuthorSK"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#888888;"
+          vertex="1" parent="1">
+          <mxGeometry x="600" y="100" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- EDGES -->
+        <mxCell id="e1" source="fact" target="customer" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e2" source="fact" target="book" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e3" source="fact" target="date" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e4" source="book" target="bridge" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e5" source="author" target="bridge" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

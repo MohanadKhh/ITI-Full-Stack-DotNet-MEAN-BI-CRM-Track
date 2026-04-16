@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Sales Star Schema">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- FACT TABLE -->
+        <mxCell id="fact" value="Fact_Sales&#xa;----------------&#xa;PK: SalesID&#xa;DK: OrderID&#xa;FK: ProductID&#xa;FK: CustomerID&#xa;FK: SalesmanID&#xa;FK: DateID&#xa;Measure: Quantity&#xa;Measure: TotalPrice"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#d5c2ff;strokeColor=#6c5ce7;"
+          vertex="1" parent="1">
+          <mxGeometry x="450" y="250" width="260" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- DIM CUSTOMER -->
+        <mxCell id="customer" value="Dim_Customer&#xa;----------------&#xa;PK: CustomerID&#xa;FirstName&#xa;LastName&#xa;Email&#xa;PhoneNumber&#xa;GenderName"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;"
+          vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="240" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- DIM PRODUCT -->
+        <mxCell id="product" value="Dim_Product&#xa;----------------&#xa;PK: ProductID&#xa;ProductName&#xa;Price&#xa;SubCategoryName&#xa;CategoryName"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;"
+          vertex="1" parent="1">
+          <mxGeometry x="800" y="250" width="260" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- DIM DATE -->
+        <mxCell id="date" value="Dim_Date&#xa;----------------&#xa;PK: DateID&#xa;FullDate&#xa;Day&#xa;Month&#xa;Year&#xa;Quarter"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+          vertex="1" parent="1">
+          <mxGeometry x="450" y="480" width="260" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- DIM SALESMAN -->
+        <mxCell id="salesman" value="Dim_Salesman&#xa;----------------&#xa;PK: SalesmanID&#xa;FirstName&#xa;LastName&#xa;Email&#xa;PhoneNumber&#xa;StreetAddress&#xa;City&#xa;State&#xa;ZipCode"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+          vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="260" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- EDGES -->
+        <mxCell id="e1" source="fact" target="customer" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e2" source="fact" target="product" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e3" source="fact" target="date" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e4" source="fact" target="salesman" edge="1" parent="1"
+          style="endArrow=block;html=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

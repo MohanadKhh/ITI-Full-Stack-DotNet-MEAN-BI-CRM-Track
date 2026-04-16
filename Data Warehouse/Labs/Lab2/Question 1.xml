@@ -1,0 +1,35 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Star Schema">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="fact" value="Fact_Visit&#xa;PK: VisitID&#xa;FK: TimeID&#xa;FK: DoctorID&#xa;FK: PatientID&#xa;Count&#xa;Charge"
+          style="shape=rectangle;whiteSpace=wrap;html=1;"
+          vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="time" value="Dim_Time&#xa;PK: TimeID&#xa;Date&#xa;Day&#xa;Month&#xa;Year"
+          style="shape=rectangle;whiteSpace=wrap;html=1;"
+          vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="doctor" value="Dim_Doctor&#xa;PK: DoctorID&#xa;Name&#xa;Phone&#xa;Department"
+          style="shape=rectangle;whiteSpace=wrap;html=1;"
+          vertex="1" parent="1">
+          <mxGeometry x="150" y="200" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="patient" value="Dim_Patient&#xa;PK: PatientID&#xa;Name&#xa;Phone&#xa;Age"
+          style="shape=rectangle;whiteSpace=wrap;html=1;"
+          vertex="1" parent="1">
+          <mxGeometry x="700" y="200" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

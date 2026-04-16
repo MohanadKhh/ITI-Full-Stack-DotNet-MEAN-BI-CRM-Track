@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Game Star Schema">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Fact Table -->
+        <mxCell id="fact" value="Fact_GameAttendance&#xa;----------------&#xa;PK: AttendanceID&#xa;FK: DateID&#xa;FK: SpectatorID&#xa;FK: LocationID&#xa;FK: GameID&#xa;Measure: Count&#xa;Measure: Charge"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+          vertex="1" parent="1">
+          <mxGeometry x="420" y="220" width="240" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- Dim Date -->
+        <mxCell id="date" value="Dim_Date&#xa;----------------&#xa;PK: DateID&#xa;FullDate&#xa;Day&#xa;Month&#xa;Year"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;"
+          vertex="1" parent="1">
+          <mxGeometry x="420" y="40" width="220" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- Dim Spectator -->
+        <mxCell id="spectator" value="Dim_Spectator&#xa;----------------&#xa;PK: SpectatorID&#xa;Name&#xa;Category (Student/Adult/Senior)&#xa;Phone"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+          vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Dim Location -->
+        <mxCell id="location" value="Dim_Location&#xa;----------------&#xa;PK: LocationID&#xa;StadiumName&#xa;City&#xa;Country"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;"
+          vertex="1" parent="1">
+          <mxGeometry x="420" y="420" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- Dim Game -->
+        <mxCell id="game" value="Dim_Game&#xa;----------------&#xa;PK: GameID&#xa;GameName&#xa;Teams&#xa;League&#xa;Type"
+          style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;"
+          vertex="1" parent="1">
+          <mxGeometry x="740" y="220" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="edge1" source="fact" target="date"
+          style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;"
+          edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge2" source="fact" target="spectator"
+          style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;"
+          edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge3" source="fact" target="location"
+          style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;"
+          edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge4" source="fact" target="game"
+          style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;"
+          edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
