@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "ITI.PaymentService.Server.Protos";
+
+import "models.proto";
+
+service PaymentService{
+	rpc DeductBalance(UserDetails) returns (PaymentApproval);
+}

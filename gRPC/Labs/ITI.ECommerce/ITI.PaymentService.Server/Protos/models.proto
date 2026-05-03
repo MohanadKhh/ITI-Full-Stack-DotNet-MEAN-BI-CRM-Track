@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "ITI.PaymentService.Server.Protos";
+
+message UserDetails{
+	int32 OrderId = 1;
+	int32 UserId = 2;
+	double Balance = 3;
+}
+
+message PaymentApproval{
+	bool Success = 1;
+}

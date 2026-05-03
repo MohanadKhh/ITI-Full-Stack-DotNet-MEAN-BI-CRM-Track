@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ITI.InventoryService.Server/ITI.InventoryService.Server.csproj" />
+  <Project Path="ITI.OrderService.Client/ITI.OrderService.Client.csproj" />
+  <Project Path="ITI.PaymentService.Server/ITI.PaymentService.Server.csproj" />
+</Solution>

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "ITI.InventoryService.Server.Protos";
+
+import "InventoryModels.proto";
+
+service InventoryService{
+	rpc DeductQuantity (ProductDetails) returns (InventoryApproval);
+}
