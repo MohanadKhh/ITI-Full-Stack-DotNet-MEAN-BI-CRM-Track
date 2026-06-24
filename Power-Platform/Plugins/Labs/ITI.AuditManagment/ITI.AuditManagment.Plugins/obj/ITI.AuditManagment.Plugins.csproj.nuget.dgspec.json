@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Mohanad.Khh\\ITI\\Power Platform\\Plugins\\Labs\\ITI.AuditManagment\\ITI.AuditManagment.Plugins\\ITI.AuditManagment.Plugins.csproj": {}
+  },
+  "projects": {
+    "D:\\Mohanad.Khh\\ITI\\Power Platform\\Plugins\\Labs\\ITI.AuditManagment\\ITI.AuditManagment.Plugins\\ITI.AuditManagment.Plugins.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mohanad.Khh\\ITI\\Power Platform\\Plugins\\Labs\\ITI.AuditManagment\\ITI.AuditManagment.Plugins\\ITI.AuditManagment.Plugins.csproj",
+        "projectName": "ITI.AuditManagment.Plugins",
+        "projectPath": "D:\\Mohanad.Khh\\ITI\\Power Platform\\Plugins\\Labs\\ITI.AuditManagment\\ITI.AuditManagment.Plugins\\ITI.AuditManagment.Plugins.csproj",
+        "packagesPath": "C:\\Users\\Mohanad.Khh\\.nuget\\packages\\",
+        "outputPath": "D:\\Mohanad.Khh\\ITI\\Power Platform\\Plugins\\Labs\\ITI.AuditManagment\\ITI.AuditManagment.Plugins\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mohanad.Khh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "framework": "net472",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472",
+          "dependencies": {
+            "Microsoft.CrmSdk.CoreAssemblies": {
+              "target": "Package",
+              "version": "[9.0.2.60, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NuGet.Build.Tasks.Pack": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

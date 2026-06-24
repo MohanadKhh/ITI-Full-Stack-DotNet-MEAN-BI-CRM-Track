@@ -1,0 +1,13 @@
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\bin\Debug\ITI.TicketResolutionDate.Workflow.dll
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\bin\Debug\ITI.TicketResolutionDate.Workflow.pdb
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\obj\Debug\ITI.TicketResolutionDate.Workflow.csproj.AssemblyReference.cache
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\obj\Debug\ITI.TicketResolutionDate.Workflow.csproj.CoreCompileInputs.cache
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\obj\Debug\ITI.Tick.C9DA5BC3.Up2Date
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\obj\Debug\ITI.TicketResolutionDate.Workflow.dll
+D:\Mohanad.Khh\ITI\Power Platform\Plugins\Labs\ITI.TicketResolutionDate\ITI.TicketResolutionDate.Workflow\obj\Debug\ITI.TicketResolutionDate.Workflow.pdb

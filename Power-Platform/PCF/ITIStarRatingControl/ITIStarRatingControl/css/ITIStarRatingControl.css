@@ -1,0 +1,32 @@
+.star-rating-wrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap;          /* handles 10 stars on narrow forms */
+  padding: 4px 0;
+}
+
+.star {
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.12s ease, filter 0.12s ease;
+  user-select: none;
+  line-height: 1;
+  /* Color is intentionally NOT set here — set via inline style in TS */
+}
+
+.star:hover {
+  transform: scale(1.2);
+  filter: brightness(1.1);
+}
+
+/* Read-only mode */
+.star-rating-wrapper.read-only .star {
+  cursor: default;
+  pointer-events: none;
+}
+
+.star-rating-wrapper.read-only .star:hover {
+  transform: none;
+  filter: none;
+}
