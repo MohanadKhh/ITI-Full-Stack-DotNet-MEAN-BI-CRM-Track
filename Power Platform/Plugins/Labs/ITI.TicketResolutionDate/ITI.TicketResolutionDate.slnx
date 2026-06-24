@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="ITI.TicketResolutionDate.Common/ITI.TicketResolutionDate.Common.shproj" />
+  <Project Path="ITI.TicketResolutionDate.Workflow/ITI.TicketResolutionDate.Workflow.csproj" />
+  <Properties Name="CRMSolutionProperties">
+    <Property Name="SolutionIsBoundToCRM" Value="True" />
+  </Properties>
+</Solution>

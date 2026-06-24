@@ -1,0 +1,135 @@
+<ImportExportXml version="9.2.26024.139" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26024.139" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.26061.00126">
+  <SolutionManifest>
+    <UniqueName>ITIdemo</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="ITI-demo" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>mohanadpublisher</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Mohanad Publisher" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>mhn</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>86307</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="cr53d_investigation" behavior="0" />
+      <RootComponent type="1" schemaName="mhn_bpfticketsystem" behavior="0" />
+      <RootComponent type="1" schemaName="mhn_ticket" behavior="0" />
+      <RootComponent type="29" id="{bfa257bb-de63-f111-ab0d-7c1e527669d3}" behavior="0" />
+      <RootComponent type="62" schemaName="CRMHub" behavior="0" />
+      <RootComponent type="62" schemaName="mhn_TicketManagment" behavior="0" />
+      <RootComponent type="70" id="{7813e118-f763-f111-ab0d-7ced8d455afd}" behavior="0" />
+      <RootComponent type="80" schemaName="CRMHub" behavior="0" />
+      <RootComponent type="80" schemaName="mhn_TicketManagment" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="80" schemaName="mhn_TicketManagment" displayName="Ticket-Managment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/Area_Default_Icon.png" displayName="msdyn_/Images/Area_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="62" schemaName="CRMHub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/Legacy_Crm_Icon.png" displayName="msdyn_/Images/Legacy_Crm_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="80" schemaName="CRMHub" displayName="CRM Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/Subarea_Webresource_Default_Icon.png" displayName="msdyn_/Images/Subarea_Webresource_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="62" schemaName="CRMHub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="CRMHub" solution="msdynce_CRMHub (9.0.23015.10001)">
+          <package appName="msdynce_CRMHub" version="9.0.23015.10001">msdynce_CRMHub (9.0.23015.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="CRMHub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="80" schemaName="CRMHub" displayName="CRM Hub" solution="msdynce_CRMHub (9.0.23015.10001)">
+          <package appName="msdynce_CRMHub" version="9.0.23015.10001">msdynce_CRMHub (9.0.23015.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="CRMHub" displayName="CRM Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.15)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.25">PowerAppsAppFramework_Anchor (1.0.0.25)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=mhn_TicketManagment,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="mhn_TicketManagment" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

@@ -1,0 +1,45 @@
+@model OrderCreateVM
+@{
+    ViewData["Title"] = "Place Order";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="premium-card">
+                <h3 class="premium-card-title text-center">Place New Order</h3>
+                
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Name" class="form-label font-weight-bold text-secondary">Customer Name</label>
+                        <input asp-for="Name" class="form-control rounded-pill px-3 py-2 shadow-sm" placeholder="Enter customer name" />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Item" class="form-label font-weight-bold text-secondary">Item Name</label>
+                        <input asp-for="Item" class="form-control rounded-pill px-3 py-2 shadow-sm" placeholder="Enter item name" />
+                        <span asp-validation-for="Item" class="text-danger small"></span>
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label asp-for="Quantity" class="form-label font-weight-bold text-secondary">Quantity</label>
+                        <input asp-for="Quantity" type="number" min="1" class="form-control rounded-pill px-3 py-2 shadow-sm" placeholder="Enter quantity" />
+                        <span asp-validation-for="Quantity" class="text-danger small"></span>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary rounded-pill py-2 shadow-sm">Submit Order</button>
+                        <a asp-action="Index" class="btn btn-outline-secondary rounded-pill py-2">Back to Dashboard</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

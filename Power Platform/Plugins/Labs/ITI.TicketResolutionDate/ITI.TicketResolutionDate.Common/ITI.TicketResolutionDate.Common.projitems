@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>34cb7644-35ec-49cb-94c3-6fce812734b9</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ITI.TicketResolutionDate.Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CrmServiceContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entites\mhn_Ticket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OptionSets\OptionSets.cs" />
+  </ItemGroup>
+</Project>

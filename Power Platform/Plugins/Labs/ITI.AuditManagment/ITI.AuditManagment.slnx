@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="ITI.AuditManagment.Common/ITI.AuditManagment.Common.shproj" Id="93eaf868-2a07-449e-a6c7-d389766efbe6" />
+  <Project Path="ITI.AuditManagment.Plugins/ITI.AuditManagment.Plugins.csproj" Id="6859924b-56db-4131-91fc-839ab015397a" />
+  <Properties Name="CRMSolutionProperties">
+    <Property Name="SolutionIsBoundToCRM" Value="True" />
+  </Properties>
+</Solution>

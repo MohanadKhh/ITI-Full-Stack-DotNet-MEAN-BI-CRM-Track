@@ -55,7 +55,6 @@ namespace ECommerce.MVC
             _productManager.AddProduct(productCreateVM, SaveImage(imageFile));
 
             return RedirectToAction(nameof(Index));
-
         }
 
         // GET: ProductController/Edit/5

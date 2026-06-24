@@ -1,0 +1,100 @@
+@model IEnumerable<Order>
+@{
+    ViewData["Title"] = "Order Dashboard";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="display-6 font-weight-bold text-dark mb-1">Order Dashboard</h1>
+        </div>
+        <div>
+            <a asp-action="Create" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+                Place New Order
+            </a>
+        </div>
+    </div>
+
+    <div class="premium-card">
+        <h3 class="premium-card-title">Active Orders</h3>
+        <div class="table-responsive">
+            <table class="table table-premium">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersTableBody">
+                    @if (Model == null || !Model.Any())
+                    {
+                        <tr id="noOrdersRow">
+                            <td colspan="4" class="text-center text-muted py-4">No orders placed yet.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        foreach (var order in Model)
+                        {
+                            <tr id="order-row-@order.Id">
+                                <td>#@order.Id</td>
+                                <td class="font-weight-bold text-dark">@order.Name</td>
+                                <td>@order.Item</td>
+                                <td>
+                                    <span class="badge bg-secondary px-3 py-2 rounded-pill">@order.Quantity</span>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script>
+        // Set up connection
+        const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/orderHub")
+        .withAutomaticReconnect()
+        .build();
+
+        // Start connection
+        connection.start()
+        .then(() => console.log('Connected'))
+        .catch(err => console.error('Connection failed: ', err));
+
+        // connection.invoke("SendOrderUpdate", order)
+
+        // Listen for new orders
+        connection.on("NewOrder", (order) => {
+
+        const noOrdersRow = document.getElementById("noOrdersRow");
+        if (noOrdersRow) {
+        noOrdersRow.remove();
+        }
+
+        const tr = document.createElement("tr");
+        tr.id = "order-row-" + order.id;
+        tr.className = "flash-row";
+
+        tr.innerHTML = `
+        <td>#${order.id}</td>
+        <td class="font-weight-bold text-dark">${order.name}</td>
+        <td>${order.item}</td>
+        <td>
+        <span class="badge bg-secondary px-3 py-2 rounded-pill">${order.quantity}</span>
+        </td>
+        `;
+
+        const tbody = document.getElementById("ordersTableBody");
+        tbody.appendChild(tr);
+        tr.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+        });
+    </script>
+}
